@@ -122,24 +122,38 @@
   .contents-text strong{ display:block; font-family:"Poppins",sans-serif; color:var(--ink); margin-bottom:3px; font-size:1rem; }
   .contents-text span{ font-size:.88rem; color:var(--ink-soft); line-height:1.4; }
 
-  /* Per-unit nav */
-  .unit-nav{ display:flex; gap:10px; margin:52px 0 22px; flex-wrap:wrap; }
-  .unit-nav-item{
-    display:flex; align-items:center; gap:8px;
-    padding:6px 14px 6px 6px;
+  /* Contents return chip at end of each Unit */
+  .unit-bottom-bar{
+    display:flex;
+    justify-content:flex-end;
+    margin:24px 0 12px;
+  }
+  .contents-chip{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 16px;
     border-radius:20px;
     border:1.5px solid var(--line-strong);
-    font-family:"Poppins",sans-serif; font-weight:600; font-size:.85rem;
-    color:var(--ink-soft); text-decoration:none;
+    background:var(--panel);
+    font-family:"Poppins",sans-serif;
+    font-weight:600;
+    font-size:.84rem;
+    color:var(--ink-soft);
+    text-decoration:none;
+    transition:all .15s ease;
   }
-  .unit-nav-item .dot{
-    width:22px; height:22px; border-radius:50%;
-    background:var(--line); color:var(--ink-soft);
-    display:flex; align-items:center; justify-content:center;
-    font-size:.76rem; font-family:"Poppins",sans-serif; font-weight:700;
+  .contents-chip:hover{
+    border-color:var(--navy-mid);
+    color:var(--navy-mid);
+    background:#fff;
+    transform:translateY(-1px);
+    box-shadow:0 2px 6px rgba(18,48,74,0.08);
   }
-  .unit-nav-item.active{ border-color:var(--navy-mid); color:var(--navy-mid); }
-  .unit-nav-item.active .dot{ background:var(--navy-mid); color:#fff; }
+  .contents-chip .chip-icon{
+    font-size:.85rem;
+    line-height:1;
+  }
 
   /* Unit hero (full-bleed, edge to edge) */
   .unit-hero{
@@ -510,7 +524,7 @@
   }
 </style>
 
-<div class="top-masthead">
+<div class="top-masthead" id="top">
   <div class="top-masthead-inner">
     <p class="kicker">Interactive vocabulary workbook &middot; Technical &amp; engineering English</p>
     <h1>Professional English for Engineering</h1>
@@ -554,24 +568,16 @@
         <span class="contents-num">8</span>
         <span class="contents-text"><strong>Numbers and calculations</strong><span>Decimals, fractions, rounding, and the language of arithmetic operations and geometry.</span></span>
       </a>
+      <a class="contents-card" href="#unit9">
+        <span class="contents-num">9</span>
+        <span class="contents-text"><strong>Area, size and mass</strong><span>Cross-sectional and surface area, weight, mass, volume, density, and lightweight materials.</span></span>
+      </a>
     </div>
   </div>
 </div>
 
   <!-- ============ UNIT 1 ============ -->
   <section id="unit1">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item active"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -677,23 +683,15 @@
       <textarea id="notes1" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <!-- ============ UNIT 2 ============ -->
   <section id="unit2">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item active"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -838,23 +836,15 @@
       <textarea id="notes2" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <!-- ============ UNIT 3 ============ -->
   <section id="unit3">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item active"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -943,23 +933,15 @@
       <textarea id="notes3" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <!-- ============ UNIT 4 ============ -->
   <section id="unit4">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item active"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -1059,23 +1041,15 @@
       <textarea id="notes4" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <!-- ============ UNIT 5 ============ -->
   <section id="unit5">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item active"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -1199,23 +1173,15 @@
       <textarea id="notes5" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <!-- ============ UNIT 6 ============ -->
   <section id="unit6">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item active"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -1341,23 +1307,15 @@
       <textarea id="notes6" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <!-- ============ UNIT 7 ============ -->
   <section id="unit7">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item active"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -1465,22 +1423,14 @@
       <textarea id="notes7" placeholder="Type your notes here&hellip;"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <section id="unit8">
-  <div class="wrap">
-    <div class="unit-nav">
-      <a href="#unit1" class="unit-nav-item"><span class="dot">1</span>Drawings</a>
-      <a href="#unit2" class="unit-nav-item"><span class="dot">2</span>Design development</a>
-      <a href="#unit3" class="unit-nav-item"><span class="dot">3</span>Design solutions</a>
-      <a href="#unit4" class="unit-nav-item"><span class="dot">4</span>Measurements</a>
-      <a href="#unit5" class="unit-nav-item"><span class="dot">5</span>Locating &amp; setting out</a>
-      <a href="#unit6" class="unit-nav-item"><span class="dot">6</span>Dimensions of circles</a>
-      <a href="#unit7" class="unit-nav-item"><span class="dot">7</span>Dimensional accuracy</a>
-      <a href="#unit8" class="unit-nav-item active"><span class="dot">8</span>Numbers &amp; calculations</a>
-    </div>
-  </div>
 
     <div class="unit-hero">
       <div class="unit-hero-inner">
@@ -1575,12 +1525,149 @@
       <textarea id="notes8" class="notes-box" placeholder="Write your notes here…" rows="5"></textarea>
       <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
     </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
+  </div>
+  </section>
+
+  <!-- ============ UNIT 9 ============ -->
+  <section id="unit9">
+
+    <div class="unit-hero">
+      <div class="unit-hero-inner">
+        <div class="unit-badge">9</div>
+        <div>
+          <p class="kicker">Unit 9</p>
+          <h1>Area, size and mass</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrap">
+    <div class="sec-head"><div class="badge">A</div><h2>Area</h2></div>
+
+    <p class="lede">The textbook extract below looks at different aspects of <strong>area</strong> in engineering.</p>
+
+    <div class="textbook-fragment" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:20px 24px; margin:24px 0 32px;">
+      <div style="background:#9ecb8a; color:#184015; font-family:'Poppins',sans-serif; font-weight:700; font-size:1.18rem; padding:7px 14px; border-radius:4px; margin-bottom:16px; letter-spacing:0.2px;">
+        Dimensions of wires and cables
+      </div>
+      <p style="margin:0 0 16px; line-height:1.75; font-size:0.98rem;">The sizes of electrical wires are specified by a number which gives an area in <strong>square millimetres</strong>. For example, in a home, a 6&nbsp;mm&sup2; wire may be specified to supply an electric oven in a kitchen. This number gives the <strong>cross-sectional area</strong> of the conductor. Increasing the cross-sectional area allows the conductor to carry more current safely, without overheating.</p>
+
+      <figure style="margin:0 0 18px; text-align:center;">
+        <img src="cross.png" alt="Cross-section of 6 mm² wire showing conductor, insulation, radius 1.38 mm, and cable cross-section" style="width:100%; max-width:680px; height:auto; display:block; margin:0 auto; border-radius:4px;">
+        <figcaption style="margin-top:7px; font-size:0.84rem; color:var(--ink-soft); font-style:italic;">Cross-section of 6 mm&sup2; wire</figcaption>
+      </figure>
+
+      <div class="inline-figure-wrap" style="margin:0;">
+        <figure class="inline-figure" style="width:280px; max-width:48%; margin:0 0 12px 20px;">
+          <img src="powerline.png" alt="High-voltage power lines using groups of small-section cables spaced apart" style="border-radius:4px;">
+          <figcaption>High-voltage power lines with grouped small-section conductors</figcaption>
+        </figure>
+        <p style="margin:0; line-height:1.75; font-size:0.98rem;">In high-voltage power lines, it is not only the cross-sectional area of conductors that is important, but also their <strong>surface area</strong> &mdash; the amount of surface that is in contact with the air, to allow cooling. Therefore, instead of using single cables with large sections for each conductor, power lines often use groups of two, three or four <strong>small-section</strong> cables, to give more surface area than a single, <strong>large-section</strong> cable.</p>
+      </div>
+    </div>
+
+    <div class="sec-head"><div class="badge">B</div><h2>Weight, mass, volume and density</h2></div>
+
+    <p class="lede">In everyday language, the term <strong>weight</strong> means how heavy things are (how much they <strong>weigh</strong>), and <strong>grams</strong> and <strong>kilograms</strong> are used as units of weight. But in physics and in engineering, grams and kilograms are units of <strong>mass</strong>. Whether an object is on earth &mdash; where it is subjected to <strong>gravity</strong> (the pull of the earth) &mdash; or floating <strong>weightless</strong> in space, its mass is always the same.</p>
+
+    <div class="reading-block">
+      <p>The mass of an object depends on:</p>
+      <ul style="margin:8px 0 14px 20px; line-height:1.7;">
+        <li>the <strong>volume</strong> of the object, measured in <strong>cubic metres</strong> (m&sup3;) &mdash; as an object's volume increases, its mass increases</li>
+        <li>the <strong>density</strong> of the object, measured in <strong>kilograms per cubic metre</strong> (kg/m&sup3;) &mdash; as density increases, mass <strong>per unit of volume</strong> increases.</li>
+      </ul>
+      <p>The mass of an object is the object's volume multiplied by its density. The weight of an object is the force exerted on the object's mass by gravity.</p>
+      <p>Some materials are very <strong>dense</strong>, and therefore very heavy. An example is lead (Pb), which has a density of 11,340&nbsp;kg/m&sup3;. Other materials, such as expanded polystyrene (which can have a density as low as 10&nbsp;kg/m&sup3;), are very <strong>lightweight</strong>.</p>
+    </div>
+
+    <!-- Exercise 9.1 -->
+    <div class="exercise" id="ex30">
+      <h3><span class="exercise-num">9.1</span> Complete the calculations for the component</h3>
+      <p class="instructions">The component below is made of mild steel. It has a radius of 40&nbsp;mm and it is 1,200&nbsp;mm long. Complete the calculations using the words in the box. Look at A and B above to help you.</p>
+
+      <figure style="margin:16px 0 20px; text-align:center;">
+        <img src="component.png" alt="Mild steel component: radius 40 mm, length 1,200 mm" style="width:100%; max-width:720px; height:auto; display:block; margin:0 auto; border-radius:6px;">
+        <figcaption style="margin-top:6px; font-size:0.83rem; color:var(--ink-soft); font-style:italic;">Mild steel cylindrical component: radius 40&nbsp;mm, length 1,200&nbsp;mm</figcaption>
+      </figure>
+
+      <div class="word-bank" id="ex30-bank"></div>
+
+      <div style="background:#f7fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 22px; margin-top:16px;">
+        <ol class="cloze-list" id="ex30-list"></ol>
+        <div style="font-family:'Courier New',Courier,monospace; font-size:0.95rem; margin-top:12px; padding:6px 0 0 34px; color:var(--ink-soft); border-top:1px dashed #cbd5e1;">
+          Circumference: 2&pi;r = 3.14 &times; 40mm = 251 mm = 0.251 m
+        </div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex30')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex30')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex30')">Reset</button>
+        <span class="score" id="ex30-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 9.2 -->
+    <div class="exercise" id="ex31">
+      <h3><span class="exercise-num">9.2</span> Write the whole words for the unit abbreviations</h3>
+      <p class="instructions">Now write the whole words for the unit abbreviations in the calculation in 9.1 above. Look at A and B above to help you. The first one has been done for you.</p>
+      <ol class="cloze-list" id="ex31-list"></ol>
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex31')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex31')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex31')">Reset</button>
+        <span class="score" id="ex31-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 9.3 -->
+    <div class="exercise" id="ex32">
+      <h3><span class="exercise-num">9.3</span> Complete the article about satellite design</h3>
+      <p class="instructions">Complete the extract from an article about satellite design using the words in the box. Look at A and B above to help you.</p>
+
+      <div class="word-bank" id="ex32-bank"></div>
+
+      <div class="inline-figure-wrap" style="margin-top:16px;">
+        <figure class="inline-figure" style="width:320px; max-width:50%;">
+          <img src="satellite.png" alt="Satellite in orbit with deployed solar panels">
+          <figcaption>Satellite in orbit with deployed solar panels</figcaption>
+        </figure>
+        <div class="passage-cloze" id="ex32-passage" style="font-size:0.96rem; line-height:2.05;">
+          <p>Satellites need to be designed to cope with two very different phases: deployment (the journey into space by rocket) and operation (working in space).</p>
+          <p>For the first phase, engineers are faced with the problem that every (1) <input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:90px;"> metre of volume taken up within the rocket will add millions of dollars to its ticket into space. And each extra gram of (2) <input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:90px;"> added to the craft will increase the fuel needed to propel it upwards against the pull of (3) <input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:90px;">. That extra fuel, in turn, will (4) <input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:90px;"> a little more, further adding to the total weight of the craft. With the cost of kilograms so high, the satellite must therefore be as (5) <input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:110px;"> as possible.</p>
+          <p>In the second phase, with the orbiting satellite now (6) <input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:110px;">, its mass is practically irrelevant. As for the amount of space occupied, the situation is completely reversed. The satellite's solar panels, which transform sunlight into battery power, must unfold to cover as wide an area as possible &mdash; opening out to cover an area of several (7) <input class="blank" type="text" data-idx="6" autocomplete="off" style="min-width:95px;"> metres &mdash; in order to maximize their exposure to the sun.</p>
+        </div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex32')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex32')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex32')">Reset</button>
+        <span class="score" id="ex32-score"></span>
+      </div>
+    </div>
+
+    <!-- Over to you -->
+    <div class="over-to-you">
+      <strong>Over to you</strong>
+      <p>Talk about different materials that are suitable for specific engineering uses due to their density &mdash; because they are either very dense, or very lightweight.</p>
+      <textarea id="notes9" class="notes-box" placeholder="Write your notes here…" rows="5"></textarea>
+      <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
+    </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
   </div>
   </section>
 
   <div class="wrap">
     <footer>
-      Original reading text and exercises written for this workbook, covering standard engineering-English vocabulary (drawing types and scales, views, design development and revision, design objectives and calculations, horizontal and vertical measurement, locating and setting out, dimensions of circles, dimensional accuracy, and numbers and calculations). Not a reproduction of any published textbook.
+      Original reading text and exercises written for this workbook, covering standard engineering-English vocabulary (drawing types and scales, views, design development and revision, design objectives and calculations, horizontal and vertical measurement, locating and setting out, dimensions of circles, dimensional accuracy, numbers and calculations, and area, size and mass). Not a reproduction of any published textbook.
     </footer>
   </div>
 
@@ -1785,6 +1872,39 @@
         { text:'The length of each side of a square is equal to the', answers:['square root'], suffix:" of the square's area." },
         { text:'If each angle in a triangle is 60°, then the lengths of its sides are', answers:['equal'], suffix:'.' },
       ]
+    },
+    ex30: {
+      bank: ['cross-sectional area','density','mass','surface area','volume'],
+      qs: [
+        { text:'', suffix:'of mild steel: 7,850 kg/m³', answers:['density'] },
+        { text:'', suffix:': πr² = 3.14 × 40² = 5 024 mm² = 0.005024 m²', answers:['cross sectional area','cross-sectional area'] },
+        { text:'', suffix:': 0.005024 m² × 1.2 m = 0.0060288 m³', answers:['volume'] },
+        { text:'', suffix:': 0.0060288 m³ × 7,850 kg/m³ = 47.32608 kg', answers:['mass'] },
+        { text:'Total', suffix:'to be painted: 0.251 m × 1.2 m + 0.005 m² + 0.005 m² = 0.311 m²', answers:['surface area'] },
+      ]
+    },
+    ex31: {
+      qs: [
+        { text:'m &mdash; ', suffix:'', answers:['metres','metre'], given:true },
+        { text:'mm &mdash; ', suffix:'', answers:['millimetres','millimetre'] },
+        { text:'mm² &mdash; ', suffix:'', answers:['square millimetres','square millimetre'] },
+        { text:'m² &mdash; ', suffix:'', answers:['square metres','square metre'] },
+        { text:'m³ &mdash; ', suffix:'', answers:['cubic metres','cubic metre'] },
+        { text:'kg &mdash; ', suffix:'', answers:['kilograms','kilogram'] },
+        { text:'kg/m³ &mdash; ', suffix:'', answers:['kilograms per cubic metre','kilogram per cubic metre'] },
+      ]
+    },
+    ex32: {
+      bank: ['cubic','gravity','lightweight','mass','square','weigh','weightless'],
+      qs: [
+        { answers:['cubic'] },
+        { answers:['mass'] },
+        { answers:['gravity'] },
+        { answers:['weigh'] },
+        { answers:['lightweight'] },
+        { answers:['weightless'] },
+        { answers:['square'] },
+      ]
     }
   };
 
@@ -1838,6 +1958,8 @@
   buildCloze('ex27');
   buildCloze('ex28');
   buildCloze('ex29');
+  buildCloze('ex30');
+  buildCloze('ex31');
 
   function buildBank(exId){
     const bank = document.getElementById(exId+'-bank');
@@ -1857,6 +1979,8 @@
   buildBank('ex20');
   buildBank('ex25');
   buildBank('ex28');
+  buildBank('ex30');
+  buildBank('ex32');
 
   function checkExercise(exId){
     const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
@@ -2259,7 +2383,7 @@
   buildCloze('ex8');
 
   // Notes autosave (per unit)
-  [['notes1','drawings-unit1-notes'], ['notes2','drawings-unit2-notes'], ['notes3','drawings-unit3-notes'], ['notes4','drawings-unit4-notes'], ['notes5','drawings-unit5-notes'], ['notes6','drawings-unit6-notes'], ['notes7','drawings-unit7-notes'], ['notes8','drawings-unit8-notes']].forEach(([id,key])=>{
+  [['notes1','drawings-unit1-notes'], ['notes2','drawings-unit2-notes'], ['notes3','drawings-unit3-notes'], ['notes4','drawings-unit4-notes'], ['notes5','drawings-unit5-notes'], ['notes6','drawings-unit6-notes'], ['notes7','drawings-unit7-notes'], ['notes8','drawings-unit8-notes'], ['notes9','drawings-unit9-notes']].forEach(([id,key])=>{
     try{
       const el = document.getElementById(id);
       const saved = localStorage.getItem(key);
