@@ -446,6 +446,10 @@
   .sort-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
   @media (max-width:760px){ .sort-grid{ grid-template-columns:1fr 1fr; } }
   @media (max-width:420px){ .sort-grid{ grid-template-columns:1fr; } }
+
+  /* Puzzle 14.3 layout */
+  .puzzle-layout{ display:grid; grid-template-columns:280px 1fr; gap:24px; margin:20px 0; }
+  @media (max-width:760px){ .puzzle-layout{ grid-template-columns:1fr; } }
   .sort-bucket{
     background:var(--paper);
     border:1.5px solid var(--line-strong);
@@ -587,6 +591,18 @@
       <a class="contents-card" href="#unit13">
         <span class="contents-num">13</span>
         <span class="contents-text"><strong>Non-ferrous metals</strong></span>
+      </a>
+      <a class="contents-card" href="#unit14">
+        <span class="contents-num">14</span>
+        <span class="contents-text"><strong>Polymers</strong></span>
+      </a>
+      <a class="contents-card" href="#unit15">
+        <span class="contents-num">15</span>
+        <span class="contents-text"><strong>Minerals and ceramics</strong></span>
+      </a>
+      <a class="contents-card" href="#unit16">
+        <span class="contents-num">16</span>
+        <span class="contents-text"><strong>Concrete</strong></span>
       </a>
     </div>
   </div>
@@ -2523,10 +2539,659 @@
   </div>
   </section>
 
+  <!-- ============ UNIT 14 ============ -->
+  <section id="unit14">
+
+    <div class="unit-hero">
+      <div class="unit-hero-inner">
+        <div class="unit-badge">14</div>
+        <div>
+          <p class="kicker">Unit 14</p>
+          <h1>Polymers</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrap">
+    <div class="sec-head"><div class="badge">A</div><h2>Natural and synthetic polymers</h2></div>
+
+    <p class="lede">The web page below, from a website for engineering students, provides an introduction to polymers.</p>
+
+    <!-- Simulated webpage for Part A -->
+    <div style="border:1px solid #c9d6df; border-radius:10px; overflow:hidden; box-shadow:0 4px 18px rgba(18,48,74,0.10); margin:22px 0 8px; background:#fff;">
+
+      <!-- Browser chrome -->
+      <div style="background:#e8edf1; padding:10px 14px; display:flex; align-items:center; gap:10px; border-bottom:1px solid #c9d6df;">
+        <div style="display:flex; gap:6px;">
+          <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:inline-block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:inline-block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:inline-block;"></span>
+        </div>
+        <div style="flex:1; background:#fff; border:1px solid #bfc8d2; border-radius:5px; padding:4px 12px; font-size:0.78rem; color:#6b7a8d; font-family:'IBM Plex Mono',monospace;">
+          🔒 engineering-student-portal.org/materials/polymers-intro
+        </div>
+        <div style="display:flex; gap:6px; color:#868ea3; font-size:0.75rem;">
+          <span>&minus;</span><span>&#x25a2;</span><span>&times;</span>
+        </div>
+      </div>
+
+      <!-- Webpage content -->
+      <div style="background:#f7f9fc;">
+
+        <!-- Site nav -->
+        <div style="background:#1a3a5c; padding:0 20px; display:flex; align-items:center; gap:0; overflow-x:auto;">
+          <span style="color:#fff; font-weight:700; font-family:'Poppins',sans-serif; font-size:0.95rem; padding:12px 0; margin-right:24px; white-space:nowrap;">EngStudent Hub</span>
+          <span style="color:#a8c8e8; font-size:0.82rem; padding:12px 14px; cursor:default; white-space:nowrap;">Home</span>
+          <span style="color:#a8c8e8; font-size:0.82rem; padding:12px 14px; cursor:default; white-space:nowrap;">Materials Science</span>
+          <span style="color:#fff; font-size:0.82rem; padding:12px 14px; border-bottom:3px solid #4da6e0; cursor:default; white-space:nowrap;">Polymers</span>
+          <span style="color:#a8c8e8; font-size:0.82rem; padding:12px 14px; cursor:default; white-space:nowrap;">Metals</span>
+        </div>
+
+        <!-- Page body -->
+        <div style="padding:24px 24px 28px; max-width:860px;">
+
+          <h2 style="font-family:'Poppins',sans-serif; font-size:1.4rem; color:#1a3a5c; margin:0 0 6px;">Introduction to Polymers &amp; Plastics</h2>
+          <p style="color:#6b7a8d; font-size:0.85rem; margin:0 0 20px;">Fundamentals of Engineering Materials &bull; Student Guide</p>
+
+          <div style="background:#fff; border:1px solid #dde4ec; border-radius:8px; padding:22px 24px; margin:0 0 16px;">
+            <p style="margin:0 0 16px; line-height:1.75; font-size:0.98rem; color:#2d3f52;">
+              With names such as polytetrafluoroethylene and polyethyleneteraphthalate, it's not surprising that polymers are usually called by their more common name, <strong>plastic</strong>. But what, exactly, is a polymer or a plastic?
+            </p>
+
+            <div class="inline-figure-wrap" style="margin:0 0 16px;">
+              <figure class="inline-figure" style="width:230px; max-width:44%; margin:0 0 14px 20px; float:right;">
+                <img src="images/polymer.png" alt="Molecular diagram of a polymer chain consisting of joined atoms" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.10); width:100%; display:block;">
+                <figcaption style="margin-top:6px; font-size:0.78rem; color:#6b7a8d; font-style:italic; text-align:center;">A polymer chain</figcaption>
+              </figure>
+
+              <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem; color:#2d3f52;">
+                Polymers are compounds made up of several elements that are chemically bound. Most compounds consist of large numbers of tiny <strong>molecules</strong>, which each contain just a few <strong>atoms</strong>. For example, a water molecule &ndash; H<sub>2</sub>O &ndash; contains two hydrogen atoms and one oxygen atom. But the molecules of polymers contain huge numbers of atoms, joined together in <strong>long chains</strong>.
+              </p>
+
+              <p style="margin:0; line-height:1.75; font-size:0.98rem; color:#2d3f52;">
+                <strong>Rubber</strong>, thanks to its many uses from rubber bands to car tyres, is one of the best-known polymers. It comes from <strong>latex</strong>, a <strong>natural</strong> liquid which comes from rubber trees. Rubber is therefore a <strong>natural polymer</strong>. However, most of the polymers used in industry are not natural, but <strong>synthetic</strong>. The term &lsquo;plastic&rsquo; is generally used to refer to <strong>synthetic polymers</strong> &ndash; in other words, those that are <strong>manmade</strong>.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /page body -->
+      </div><!-- /webpage content -->
+    </div><!-- /browser frame -->
+
+    <div class="notes-box" style="margin-top:16px;">
+      <div><b>Note:</b> Rubber can be natural (natural rubber) or synthetic (synthetic rubber).</div>
+    </div>
+
+    <div class="sec-head"><div class="badge">B</div><h2>Thermoplastics and thermosetting plastics</h2></div>
+
+    <p class="lede">The page goes on to look at types of polymer.</p>
+
+    <!-- Simulated webpage for Part B -->
+    <div style="border:1px solid #c9d6df; border-radius:10px; overflow:hidden; box-shadow:0 4px 18px rgba(18,48,74,0.10); margin:22px 0 28px; background:#fff;">
+
+      <!-- Browser chrome -->
+      <div style="background:#e8edf1; padding:10px 14px; display:flex; align-items:center; gap:10px; border-bottom:1px solid #c9d6df;">
+        <div style="display:flex; gap:6px;">
+          <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:inline-block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:inline-block;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:inline-block;"></span>
+        </div>
+        <div style="flex:1; background:#fff; border:1px solid #bfc8d2; border-radius:5px; padding:4px 12px; font-size:0.78rem; color:#6b7a8d; font-family:'IBM Plex Mono',monospace;">
+          🔒 engineering-student-portal.org/materials/types-of-polymer
+        </div>
+        <div style="display:flex; gap:6px; color:#868ea3; font-size:0.75rem;">
+          <span>&minus;</span><span>&#x25a2;</span><span>&times;</span>
+        </div>
+      </div>
+
+      <!-- Webpage content -->
+      <div style="background:#f7f9fc; padding:24px 24px 28px;">
+
+        <p style="margin:0 0 16px; font-size:0.98rem; line-height:1.75; color:#2d3f52;">
+          Synthetic polymers can be divided into two main categories:
+        </p>
+
+        <!-- Thermoplastics Card -->
+        <div style="background:#fff; border:1px solid #dde4ec; border-left:4px solid #2b7a4b; border-radius:8px; padding:20px 22px; margin-bottom:18px;">
+          <h3 style="font-family:'Poppins',sans-serif; font-size:1.1rem; color:#1a3a5c; margin:0 0 10px;">
+            1. Thermoplastics
+          </h3>
+          <p style="margin:0 0 12px; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            <strong>Thermoplastics</strong> can be melted by heat, and formed in shaped containers called <strong>moulds</strong>. After the liquid plastic has cooled, it <strong>sets</strong> to form a solid material. A thermoplastic is a type of plastic that can be heated and <strong>moulded</strong> numerous times. Examples of thermoplastics that are common in engineering include:
+          </p>
+          <ul style="margin:0 0 4px 20px; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            <li style="margin-bottom:6px;"><strong>ABS</strong> (acrylonitrile butadiene styrene) &ndash; stiff and light, used in vehicle bodywork</li>
+            <li style="margin-bottom:6px;"><strong>polycarbonate</strong> &ndash; used to make strong, transparent panels and vehicle lights</li>
+            <li><strong>PVC</strong> (polyvinylchloride) &ndash; a cheaper plastic used for window frames and pipes.</li>
+          </ul>
+        </div>
+
+        <!-- Thermosetting plastics Card -->
+        <div style="background:#fff; border:1px solid #dde4ec; border-left:4px solid #b45309; border-radius:8px; padding:20px 22px; margin-bottom:18px;">
+          <h3 style="font-family:'Poppins',sans-serif; font-size:1.1rem; color:#1a3a5c; margin:0 0 10px;">
+            2. Thermosetting plastics (Thermosets)
+          </h3>
+          <p style="margin:0 0 12px; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            <strong>Thermosetting plastics</strong>, also called <strong>thermosets</strong>, can be heated and moulded like thermoplastics. They may also be mixed from cold ingredients. However, during cooling or mixing, a chemical reaction occurs, causing thermosets to <strong>cure</strong>. This means they set permanently, and cannot be moulded again. If a thermoset is heated after curing, it will burn. Examples of thermosets used in engineering are:
+          </p>
+          <ul style="margin:0 0 4px 20px; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            <li style="margin-bottom:6px;"><strong>epoxy resins</strong> &ndash; used in very strong adhesives</li>
+            <li><strong>polyimides</strong> &ndash; strong and flexible, used as insulators in some electric cables.</li>
+          </ul>
+        </div>
+
+        <!-- Additional Categories Card -->
+        <div style="background:#fff; border:1px solid #dde4ec; border-left:4px solid #4da6e0; border-radius:8px; padding:20px 22px;">
+          <h3 style="font-family:'Poppins',sans-serif; font-size:1.05rem; color:#1a3a5c; margin:0 0 10px;">
+            Engineering plastics &amp; Elastomers
+          </h3>
+          <p style="margin:0 0 10px; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            Two more categories of polymer are <strong>engineering plastics</strong> and <strong>elastomers</strong>.
+          </p>
+          <p style="margin:0 0 8px; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            <strong>Engineering plastics</strong> are mostly thermoplastics that are especially strong, such as ABS and polycarbonate.
+          </p>
+          <p style="margin:0; line-height:1.75; font-size:0.95rem; color:#2d3f52;">
+            <strong>Elastomers</strong> are very elastic polymers which can be stretched by force to at least twice their original length, and can then return to their original length when the force is removed.
+          </p>
+        </div>
+
+      </div><!-- /webpage content -->
+    </div><!-- /browser frame -->
+
+    <!-- Exercise 14.1 -->
+    <div class="exercise" id="ex46">
+      <h3><span class="exercise-num">14.1</span> Circle the correct words</h3>
+      <p class="instructions">Click the correct words to complete the text. Look at A above to help you.</p>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:20px 24px; margin:16px 0; box-shadow:0 2px 8px rgba(18,48,74,0.04);">
+        <p class="choice-passage" id="ex46-para" style="margin:0; line-height:2.2; font-size:1rem;"></p>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkChoice('ex46')">Check</button>
+        <button class="btn secondary" onclick="revealChoice('ex46')">Reveal</button>
+        <button class="btn secondary" onclick="resetChoice('ex46')">Reset</button>
+        <span class="score" id="ex46-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 14.2 -->
+    <div class="exercise" id="ex47">
+      <h3><span class="exercise-num">14.2</span> True or false?</h3>
+      <p class="instructions">Read the extract describing a plastic panel manufacturing process. Then decide whether the sentences below are true or false, and review the corrections for false statements. Look at B above to help you.</p>
+
+      <!-- Browser extract card -->
+      <div style="border:1px solid #c9d6df; border-radius:8px; overflow:hidden; box-shadow:0 3px 12px rgba(18,48,74,0.06); margin:18px 0 20px; background:#fff;">
+        <div style="background:#e8edf1; padding:8px 12px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #c9d6df;">
+          <div style="display:flex; gap:5px;">
+            <span style="width:10px;height:10px;border-radius:50%;background:#ff5f57;display:inline-block;"></span>
+            <span style="width:10px;height:10px;border-radius:50%;background:#febc2e;display:inline-block;"></span>
+            <span style="width:10px;height:10px;border-radius:50%;background:#28c840;display:inline-block;"></span>
+          </div>
+          <div style="display:flex; gap:6px; margin-left:6px; color:#6b7a8d; font-size:0.75rem;">
+            <span>&ltrif;</span><span>&rtrif;</span><span>&#x21bb;</span><span>+</span>
+          </div>
+          <div style="flex:1; background:#fff; border:1px solid #bfc8d2; border-radius:4px; padding:3px 10px; font-size:0.76rem; color:#6b7a8d; font-family:'IBM Plex Mono',monospace;">
+            quality-control.internal/panels/testing-stage-3
+          </div>
+        </div>
+        <div style="padding:18px 22px; font-size:0.96rem; line-height:1.75; color:var(--ink);">
+          By this stage of the process, the plastic is solid, and has fully cooled. Selected panels can now undergo quality-control testing, to check they are strong enough to cope with the tough conditions they will be exposed to in use. Tests include tensile testing, where narrow lengths of panel are subjected to high tension loads to check they do not stretch or fracture. More tests are carried out to check the panels&rsquo; resistance to impacts and scratching. Any products that fail the tests are returned to the beginning of the production process, melted down, and their material is reused.
+        </div>
+      </div>
+
+      <ul class="choice-list" id="ex47-list"></ul>
+
+      <details class="notes-box" style="margin-top:16px; cursor:pointer;">
+        <summary style="font-weight:600; color:var(--navy-mid);">View corrections for false statements</summary>
+        <div style="margin-top:10px; line-height:1.65; font-size:0.92rem;">
+          <div style="margin-bottom:6px;"><strong>Item 3:</strong> False &mdash; The plastic is solid and has fully cooled, not liquid.</div>
+          <div style="margin-bottom:6px;"><strong>Item 4:</strong> False &mdash; The panels must not stretch or fracture under high tension loads; elastomers stretch easily to at least twice their original length.</div>
+          <div><strong>Item 6:</strong> False &mdash; Products that fail the tests are returned to the beginning, melted down and reused, meaning the material is a thermoplastic, not a thermosetting plastic (which burns rather than melts after curing).</div>
+        </div>
+      </details>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkChoice('ex47')">Check</button>
+        <button class="btn secondary" onclick="revealChoice('ex47')">Reveal</button>
+        <button class="btn secondary" onclick="resetChoice('ex47')">Reset</button>
+        <span class="score" id="ex47-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 14.3 -->
+    <div class="exercise" id="ex48">
+      <h3><span class="exercise-num">14.3</span> Word puzzle</h3>
+      <p class="instructions">Complete the word puzzle and find the word going across the page. Look at A and B opposite to help you.</p>
+
+      <div class="puzzle-layout">
+
+        <!-- Clues Column -->
+        <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:20px 22px; box-shadow:0 2px 8px rgba(18,48,74,0.04);">
+          <h4 style="margin:0 0 14px; font-family:'Poppins',sans-serif; color:var(--navy-mid); font-size:1rem; border-bottom:1px solid var(--line); padding-bottom:8px;">Clues</h4>
+          <ol style="margin:0; padding-left:22px; display:flex; flex-direction:column; gap:11px; font-size:0.92rem; line-height:1.5;">
+            <li>a shorter name for polyvinylchloride (3)<br><input class="blank puzzle-inp" type="text" data-clue="1" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>used for forming melted plastic (6)<br><input class="blank puzzle-inp" type="text" data-clue="2" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>a group of atoms (8)<br><input class="blank puzzle-inp" type="text" data-clue="3" autocomplete="off" style="margin-top:3px; width:100%; max-width:150px;"></li>
+            <li>a long chain of atoms (7)<br><input class="blank puzzle-inp" type="text" data-clue="4" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>to set permanently (4)<br><input class="blank puzzle-inp" type="text" data-clue="5" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>a very elastic polymer (9)<br><input class="blank puzzle-inp" type="text" data-clue="6" autocomplete="off" style="margin-top:3px; width:100%; max-width:160px;"></li>
+            <li>a plastic that sets permanently (9)<br><input class="blank puzzle-inp" type="text" data-clue="7" autocomplete="off" style="margin-top:3px; width:100%; max-width:160px;"></li>
+            <li>a natural polymer (6)<br><input class="blank puzzle-inp" type="text" data-clue="8" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>a very strong thermoset resin (5)<br><input class="blank puzzle-inp" type="text" data-clue="9" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>not natural (7)<br><input class="blank puzzle-inp" type="text" data-clue="10" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>particles that form molecules (5)<br><input class="blank puzzle-inp" type="text" data-clue="11" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+            <li>another word for &lsquo;not natural&rsquo; (9)<br><input class="blank puzzle-inp" type="text" data-clue="12" autocomplete="off" style="margin-top:3px; width:100%; max-width:160px;"></li>
+            <li>material used to make rubber (5)<br><input class="blank puzzle-inp" type="text" data-clue="13" autocomplete="off" style="margin-top:3px; width:100%; max-width:140px;"></li>
+          </ol>
+        </div>
+
+        <!-- Crossword Grid Column -->
+        <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:20px 22px; box-shadow:0 2px 8px rgba(18,48,74,0.04); display:flex; flex-direction:column; align-items:center;">
+          <h4 style="margin:0 0 14px; font-family:'Poppins',sans-serif; color:var(--navy-mid); font-size:1rem; width:100%; border-bottom:1px solid var(--line); padding-bottom:8px;">Puzzle grid</h4>
+
+          <div style="overflow-x:auto; max-width:100%; padding:6px 0 12px;">
+            <div id="ex48-grid" style="display:grid; grid-template-columns:26px repeat(13, 28px); gap:3px; user-select:none;"></div>
+          </div>
+
+          <div style="width:100%; margin-top:14px; padding:14px 16px; background:var(--panel); border:1px solid var(--line); border-radius:8px;">
+            <label for="ex48-across" style="display:block; font-weight:600; font-size:0.92rem; color:var(--navy-mid); margin-bottom:6px;">
+              &#x2192; Word going across the page (13 letters):
+            </label>
+            <input class="blank" type="text" id="ex48-across" autocomplete="off" placeholder="TYPE ACROSS WORD…" style="width:100%; font-family:'IBM Plex Mono',monospace; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkEx48()">Check</button>
+        <button class="btn secondary" onclick="revealEx48()">Reveal</button>
+        <button class="btn secondary" onclick="resetEx48()">Reset</button>
+        <span class="score" id="ex48-score"></span>
+      </div>
+    </div>
+
+    <!-- Over to you -->
+    <div class="over-to-you">
+      <div class="over-to-you-head"><h3>Over to you</h3></div>
+      <p>Talk about specific types of polymer that are used in your industry, or an industry you&rsquo;re familiar with. How are they used? Which of the categories mentioned in A and B opposite do the polymers belong to?</p>
+      <textarea id="notes14" placeholder="Type your notes here&hellip;"></textarea>
+      <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
+    </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
+  </div>
+  </section>
+
+  <!-- ============ UNIT 15 ============ -->
+  <section id="unit15">
+
+    <div class="unit-hero">
+      <div class="unit-hero-inner">
+        <div class="unit-badge">15</div>
+        <div>
+          <p class="kicker">Unit 15</p>
+          <h1>Minerals and ceramics</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrap">
+    <div class="sec-head"><div class="badge">A</div><h2>Mineral and ceramic engineering materials</h2></div>
+
+    <p class="lede">This text looks at the properties and applications of minerals and ceramics in engineering.</p>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <div class="inline-figure-wrap" style="margin:0 0 16px;">
+        <figure class="inline-figure" style="width:260px; max-width:44%; margin:0 0 16px 22px; float:right;">
+          <img src="images/bricks.png" alt="Stack of clay bricks fired in an industrial kiln" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; display:block;">
+          <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Clay bricks</figcaption>
+        </figure>
+
+        <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">A <strong>mineral</strong> is a natural, <strong>inorganic</strong> material (one that is not living) which is found in the ground, often within rocks. Minerals are quite pure. Rocks, on the other hand, can be mixtures of several minerals, and may also contain previously organic material. Examples of minerals include different types of ore &ndash; from which metal can be extracted &ndash; such as <strong>iron ore</strong>. Non-metallic minerals include:</p>
+
+        <ul style="margin:0 0 16px 20px; line-height:1.75; font-size:0.98rem;">
+          <li style="margin-bottom:8px;"><strong>diamond</strong>, an extremely hard form of <strong>carbon</strong> (C), which is used as an <strong>abrasive</strong> (very hard and rough) material in cutting tools &ndash; frequently referred to as <strong>industrial diamond</strong> when used in engineering</li>
+          <li><strong>silicon</strong> (Si), found in sand as <strong>silica</strong> (silicon dioxide &ndash; SiO<sub>2</sub>), which can be heated to high temperatures to make glass.</li>
+        </ul>
+
+        <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">Generally, inorganic, non-metallic materials that have been formed by heating are called <strong>ceramics</strong>. Glass is therefore a ceramic. When materials are heated to extremely high temperatures to form ceramics that are glass-like &ndash; that is, with a structure like that of glass &ndash; we say that they are <strong>vitrified</strong>.</p>
+
+        <p style="margin:0; line-height:1.75; font-size:0.98rem;">Ceramic materials are used to make construction materials such as <strong>bricks</strong>. These are made from <strong>clay</strong>, and are then <strong>fired</strong> in a <strong>kiln</strong> &ndash; that is, heated to a high temperature in an industrial oven. Clay can also be vitrified &ndash; for example, to make waterproof pipes.</p>
+      </div>
+    </div>
+
+    <div class="sec-head"><div class="badge">B</div><h2>Glass</h2></div>
+
+    <p class="lede">A technical adviser for a glass manufacturer is giving a briefing to a group of engineers at a trade fair.</p>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">&lsquo;Sheets of glass, which are obviously flat and thin, are called <strong>float glass</strong>. This refers to the manufacturing technique where molten glass is floated on molten tin, to produce flat sheets. Usually, after float glass has been formed, it's <strong>annealed</strong> &ndash; it's left to cool slowly. But if it's left in this state, and the glass later gets broken, it breaks into dangerous, sharp pieces. So for most engineering and architectural uses, <strong>annealed glass</strong> is unsuitable. We need to use what we call <strong>safety glass</strong>.&rsquo;</p>
+
+      <p style="margin:0; line-height:1.75; font-size:0.98rem;">&lsquo;One type of safety glass is <strong>toughened glass</strong>, also called <strong>tempered glass</strong>. As the term suggests, the glass is <strong>tempered</strong> &ndash; it's heated and kept hot for a certain time, to change its structure. Then if tempered glass is broken, it <strong>shatters</strong> &ndash; it breaks into tiny pieces. These are a lot safer than the long, sharp pieces produced when annealed glass breaks. The disadvantage of toughened glass is that it can't withstand impacts from small objects, such as flying stones. So, for instance, that makes it unsuitable for vehicle <strong>windscreens</strong>. So in cases where impacts are a problem, another type of safety glass &ndash; <strong>laminated glass</strong> &ndash; is generally used. This is made by <strong>laminating glass with a polymer</strong> &ndash; in other words, making a glass and polymer &lsquo;sandwich&rsquo;, with a sheet of polymer in the middle and sheets of glass at either side. The advantage of having a laminated material is not just that it's very strong. The layers of glass are <strong>bonded</strong> to a layer of polymer &ndash; they're stuck to the polymer &ndash; so if the glass does break, the broken pieces are held together, and don't fly.&rsquo;</p>
+
+      <div class="notes-box" style="margin-top:18px; background:#fee0e0; border:1px solid #ff0000;">
+        <div><b>BrE:</b> windshield; <b>AmE:</b> windscreen </div>
+        <audio controls preload="none" style="margin-top:10px; width:100%;">
+        <source src="images/windshield.wav" type="audio/wav">
+        Your browser does not support audio playback.
+    </audio>
+      </div>
+    </div>
+
+    <!-- Exercise 15.1 -->
+    <div class="exercise" id="ex49">
+      <h3><span class="exercise-num">15.1</span> True or false?</h3>
+      <p class="instructions">Decide whether the sentences below are true or false, and review the corrections for false statements. Look at A above to help you.</p>
+
+      <ul class="choice-list" id="ex49-list"></ul>
+
+      <details class="notes-box" style="margin-top:16px; cursor:pointer;">
+        <summary style="font-weight:600; color:var(--navy-mid);">View corrections for false statements</summary>
+        <div style="margin-top:10px; line-height:1.65; font-size:0.92rem;">
+          <div style="margin-bottom:6px;"><strong>Item 1:</strong> False &mdash; Minerals are <strong>inorganic</strong> (they are not living material).</div>
+          <div style="margin-bottom:6px;"><strong>Item 5:</strong> False &mdash; Industrial diamond is an abrasive, <strong>non-metallic</strong> mineral (it is a form of carbon).</div>
+          <div><strong>Item 6:</strong> False &mdash; In order to become ceramics, materials must be <strong>heated</strong> (fired); they do not have to be vitrified (vitrified means forming a glass-like structure at extremely high temperatures).</div>
+        </div>
+      </details>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkChoice('ex49')">Check</button>
+        <button class="btn secondary" onclick="revealChoice('ex49')">Reveal</button>
+        <button class="btn secondary" onclick="resetChoice('ex49')">Reset</button>
+        <span class="score" id="ex49-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 15.2 -->
+    <div class="exercise" id="ex50">
+      <h3><span class="exercise-num">15.2</span> Describe the photos</h3>
+      <p class="instructions">Use the words and expressions in the box to describe each photo. You will need to use some words more than once. Look at B above to help you.</p>
+
+      <div class="word-bank" style="margin-bottom:20px;">
+        <span class="word-chip">annealed glass</span>
+        <span class="word-chip">safety glass</span>
+        <span class="word-chip">toughened glass</span>
+        <span class="word-chip">laminated glass</span>
+        <span class="word-chip">tempered glass</span>
+        <span class="word-chip">windscreen</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin:18px 0 22px;">
+
+        <!-- Photo 1 Card -->
+        <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(18,48,74,0.06); display:flex; flex-direction:column;">
+          <div style="background:var(--navy-fill); color:#fff; font-family:'Poppins',sans-serif; font-size:0.88rem; font-weight:600; padding:8px 14px;">Photo 1</div>
+          <div style="padding:14px; text-align:center; background:#f4f6fa; flex:0 0 auto;">
+            <img src="images/windshield.png" alt="Broken windscreen showing laminated glass cracks held together by polymer layer" style="max-height:180px; width:auto; max-width:100%; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); display:inline-block;">
+          </div>
+          <div style="padding:16px; display:flex; flex-direction:column; gap:10px; flex:1;">
+            <input class="blank" type="text" id="ex50-p1-0" autocomplete="off" style="width:100%; min-width:0;">
+            <input class="blank" type="text" id="ex50-p1-1" autocomplete="off" style="width:100%; min-width:0;">
+            <input class="blank" type="text" id="ex50-p1-2" autocomplete="off" style="width:100%; min-width:0;">
+          </div>
+        </div>
+
+        <!-- Photo 2 Card -->
+        <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(18,48,74,0.06); display:flex; flex-direction:column;">
+          <div style="background:var(--navy-fill); color:#fff; font-family:'Poppins',sans-serif; font-size:0.88rem; font-weight:600; padding:8px 14px;">Photo 2</div>
+          <div style="padding:14px; text-align:center; background:#f4f6fa; flex:0 0 auto;">
+            <img src="images/safety.png" alt="Shattered tempered glass broken into tiny pieces on the ground" style="max-height:180px; width:auto; max-width:100%; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); display:inline-block;">
+          </div>
+          <div style="padding:16px; display:flex; flex-direction:column; gap:10px; flex:1;">
+            <input class="blank" type="text" id="ex50-p2-0" autocomplete="off" style="width:100%; min-width:0;">
+            <input class="blank" type="text" id="ex50-p2-1" autocomplete="off" style="width:100%; min-width:0;">
+            <input class="blank" type="text" id="ex50-p2-2" autocomplete="off" style="width:100%; min-width:0;">
+          </div>
+        </div>
+
+        <!-- Photo 3 Card -->
+        <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(18,48,74,0.06); display:flex; flex-direction:column;">
+          <div style="background:var(--navy-fill); color:#fff; font-family:'Poppins',sans-serif; font-size:0.88rem; font-weight:600; padding:8px 14px;">Photo 3</div>
+          <div style="padding:14px; text-align:center; background:#f4f6fa; flex:0 0 auto;">
+            <img src="images/annealed.png" alt="Broken annealed glass with large, dangerous sharp shards" style="max-height:180px; width:auto; max-width:100%; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); display:inline-block;">
+          </div>
+          <div style="padding:16px; display:flex; flex-direction:column; gap:10px; flex:1;">
+            <input class="blank" type="text" id="ex50-p3-0" autocomplete="off" style="width:100%; min-width:0;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkEx50()">Check</button>
+        <button class="btn secondary" onclick="revealEx50()">Reveal</button>
+        <button class="btn secondary" onclick="resetEx50()">Reset</button>
+        <span class="score" id="ex50-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 15.3 -->
+    <div class="exercise" id="ex51">
+      <h3><span class="exercise-num">15.3</span> Complete the article about bulletproof glass</h3>
+      <p class="instructions">Complete the article about bulletproof glass from a science and technology magazine, using words from B opposite. Sometimes, more than one word is possible.</p>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:18px 0 20px;">
+        <div style="border-left:4px solid var(--navy-mid); padding-left:14px; margin-bottom:16px;">
+          <h4 style="margin:0; font-size:1.15rem; color:var(--navy-mid); font-family:'Poppins',sans-serif;">Bulletproof Glass: Myth vs Reality</h4>
+          <span style="font-size:0.82rem; color:var(--ink-soft);">Science &amp; Technology Magazine &bull; Materials in Depth</span>
+        </div>
+
+        <p style="margin:0 0 16px; line-height:2.1; font-size:0.98rem;">
+          &lsquo;Bulletproof&rsquo; is a loosely used word, suggesting something is totally unbreakable. But technically speaking, how accurate is the term &lsquo;bulletproof glass&rsquo;? Outside of Hollywood movies, can glass really stop bullets? The answer is, not on its own. But if several (1)&nbsp;<input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:110px;">&nbsp;of glass are sandwiched with a high-strength polymer to form (2)&nbsp;<input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:120px;">&nbsp;glass, a bullet-resistant, if not completely bulletproof, barrier can be obtained.
+        </p>
+
+        <p style="margin:0; line-height:2.1; font-size:0.98rem;">
+          The technique of sandwiching polymer and glass is nothing unusual. Car windscreens are made by (3)&nbsp;<input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:120px;">&nbsp;glass to a polymer, such as polyvinyl butyral (PVB), to form a type of safety glass. Unlike the other main type of safety glass &ndash; (4)&nbsp;<input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:120px;">&nbsp;glass &ndash; laminated glass remains intact on breaking. If a stone hits a windscreen, even though a small section of the glass on the outside may crack, the polymer behind it will stop the stone, and also ensure the entire piece of glass doesn't (5)&nbsp;<input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:110px;">. Bullet-resistant glass uses the same principle, but must be much tougher. A stronger polymer is therefore used &ndash; often polycarbonate &ndash; as well as a greater number of (6)&nbsp;<input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:110px;">&nbsp;of glass and polymer.
+        </p>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex51')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex51')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex51')">Reset</button>
+        <span class="score" id="ex51-score"></span>
+      </div>
+    </div>
+
+    <!-- Over to you -->
+    <div class="over-to-you">
+      <div class="over-to-you-head"><h3>Over to you</h3></div>
+      <p>Think about the different ceramics and minerals used in your industry, or in an industry you&rsquo;re familiar with. What types of material are used, and why?</p>
+      <textarea id="notes15" placeholder="Type your notes here&hellip;"></textarea>
+      <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
+    </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
+  </div>
+  </section>
+
+  <!-- ============ UNIT 16 ============ -->
+  <section id="unit16">
+
+    <div class="unit-hero">
+      <div class="unit-hero-inner">
+        <div class="unit-badge">16</div>
+        <div>
+          <p class="kicker">Unit 16</p>
+          <h1>Concrete</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrap">
+    <div class="sec-head"><div class="badge">A</div><h2>Concrete mix design</h2></div>
+
+    <p class="lede">This text looks at the constituent materials, proportioning and properties of concrete.</p>
+
+    <!-- Part A Materials Row: Cement, Sand, Gravel -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; margin:22px 0 24px;">
+      <figure style="margin:0;">
+        <img src="images/cement.png" alt="Open sack of Portland cement powder" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; height:175px; object-fit:cover; display:block;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Cement</figcaption>
+      </figure>
+
+      <figure style="margin:0;">
+        <img src="images/sand.png" alt="Sand pile for concrete mixing - fine aggregate" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; height:175px; object-fit:cover; display:block;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Sand &ndash; fine aggregate</figcaption>
+      </figure>
+
+      <figure style="margin:0;">
+        <img src="images/gravel.png" alt="Gravel stones for concrete mixing - coarse aggregate" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; height:175px; object-fit:cover; display:block;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Gravel &ndash; coarse aggregate</figcaption>
+      </figure>
+    </div>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:0 0 28px;">
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+        <strong>Cement</strong> is a key material in construction. It consists of a very fine powder. When water is added to cement, a chemical reaction occurs, and the cement begins to <strong>set</strong> &ndash; it starts to become solid. The most widely used cement-based material is <strong>concrete</strong>, which is made from cement, <strong>fine aggregate</strong> (sand), <strong>coarse aggregate</strong> (gravel) and water. After concrete has set, it needs time to reach its <strong>structural strength</strong> &ndash; the strength needed to perform effectively. Generally, engineers consider that this strength is reached after 28 days &ndash; a point called <strong>28-day strength</strong>.
+      </p>
+
+      <p style="margin:0; line-height:1.75; font-size:0.98rem;">
+        <strong>Concrete mix designs</strong>, which are specified by engineers, state the proportions of cement, fine aggregate and coarse aggregate to be used for specific structures. For example, a <strong>1:2:4 (one-two-four) mix</strong> consists of one part cement, two parts fine aggregate and four parts coarse aggregate. For mixing precise quantities &ndash; known as <strong>batching</strong> &ndash; proportions are measured by weight. Mix designs also specify the <strong>water&ndash;cement ratio</strong> &ndash; the amount of water added relative to the amount of cement used. Excess water reduces the strength of concrete, so the quantity of water is kept to a minimum. But as drier concrete is more difficult to work with, an <strong>additive</strong> (added chemical substance) called a <strong>plasticizer</strong> is often used. This helps the concrete to flow more easily. Other additives can also be used &ndash; for example, a <strong>retarder</strong> may be added to delay setting, which gives workers more time to <strong>pour</strong> (place) the concrete.
+      </p>
+    </div>
+
+    <div class="sec-head"><div class="badge">B</div><h2>Reinforced concrete</h2></div>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <div class="inline-figure-wrap" style="margin:0 0 16px;">
+        <figure class="inline-figure" style="width:260px; max-width:44%; margin:0 0 16px 22px; float:right;">
+          <img src="images/in-situ.png" alt="Workers in boots pouring in-situ reinforced concrete over a steel rebar grid" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; display:block;">
+          <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">In-situ reinforced concrete being poured</figcaption>
+        </figure>
+
+        <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+          <strong>Reinforced concrete (RC)</strong> structures contain steel bars. <strong>Steel reinforcement</strong> is needed mainly because concrete is <strong>weak in tension</strong> &ndash; that is, bad at resisting stretching forces. As steel is strong in tension, <strong>reinforcing bars</strong> overcome this weakness.
+        </p>
+
+        <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+          In order to form the different parts of structures, <strong>formwork</strong> &ndash; sometimes also called <strong>shuttering</strong> &ndash; is used. This consists of moulds of the required size and shape, made from steel or timber, which are used to contain the concrete until it has set.
+        </p>
+
+        <p style="margin:0; line-height:1.75; font-size:0.98rem;">
+          When wet concrete is <strong>cast</strong> (placed) in its final position, it is called <strong>in-situ concrete</strong>. Instead of being <strong>cast in-situ</strong>, reinforced concrete elements can also be <strong>precast</strong> &ndash; cast at a factory &ndash; then delivered to the construction site ready for assembly. Sometimes, precast concrete is also <strong>prestressed</strong>. With prestressing, tension is applied to the reinforcing bars, by machine, usually before the concrete is poured. The bars are then held in tension while wet concrete is poured around them. After the concrete has fully set, the bars become &lsquo;trapped&rsquo; in tension. This increases the concrete's ability to resist bending forces.
+        </p>
+      </div>
+    </div>
+
+    <!-- Exercise 16.1 -->
+    <div class="exercise" id="ex52">
+      <h3><span class="exercise-num">16.1</span> Match the descriptions</h3>
+      <p class="instructions">Find words and expressions in A above to match the descriptions (1&ndash;10).</p>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:20px 22px; margin:16px 0 20px; box-shadow:0 2px 8px rgba(18,48,74,0.04);">
+        <ol class="cloze-list" style="display:flex; flex-direction:column; gap:14px; margin:0; padding-left:22px;">
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">gravel used in concrete</span>
+            <input class="blank" type="text" data-idx="0" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">sand used in concrete</span>
+            <input class="blank" type="text" data-idx="1" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">powder that enables concrete to set</span>
+            <input class="blank" type="text" data-idx="2" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">mixing concrete accurately</span>
+            <input class="blank" type="text" data-idx="3" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">specification of concrete ingredients</span>
+            <input class="blank" type="text" data-idx="4" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">effective structural capability of concrete</span>
+            <input class="blank" type="text" data-idx="5" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">affects the wetness and strength of concrete</span>
+            <input class="blank" type="text" data-idx="6" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">different types of chemical put in concrete</span>
+            <input class="blank" type="text" data-idx="7" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">allows concrete to stay wet for longer</span>
+            <input class="blank" type="text" data-idx="8" autocomplete="off" style="width:220px;">
+          </li>
+          <li style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-size:0.96rem;">
+            <span style="flex:1 1 320px;">makes drier concrete easier to work with</span>
+            <input class="blank" type="text" data-idx="9" autocomplete="off" style="width:220px;">
+          </li>
+        </ol>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex52')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex52')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex52')">Reset</button>
+        <span class="score" id="ex52-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 16.2 -->
+    <div class="exercise" id="ex53">
+      <h3><span class="exercise-num">16.2</span> Prestressing techniques</h3>
+      <p class="instructions">Complete the textbook extract about a type of prestressed concrete using the words in the box. Look at B above to help you.</p>
+
+      <div class="word-bank" id="ex53-bank"></div>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:18px 0 20px;">
+        <div style="border-left:4px solid var(--navy-mid); padding-left:14px; margin-bottom:16px;">
+          <h4 style="margin:0; font-size:1.15rem; color:var(--navy-mid); font-family:'Poppins',sans-serif;">Prestressing techniques</h4>
+        </div>
+
+        <p style="margin:0 0 16px; line-height:2.1; font-size:0.98rem;">
+          In the production of reinforced concrete components, the process of (1)&nbsp;<input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:130px;">&nbsp;usually involves holding the (2)&nbsp;<input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:130px;">&nbsp;in tension while (3)&nbsp;<input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:120px;">&nbsp;the concrete. This form of prestressing is called pre-tensioning, as tension is applied <em>before</em> the concrete is poured. The technique is often used in the manufacture of floor components, which are small enough to fit on the back of a truck, and can therefore be (4)&nbsp;<input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:120px;">&nbsp;at a factory.
+        </p>
+
+        <p style="margin:0 0 20px; line-height:2.1; font-size:0.98rem;">
+          A less common prestressing technique is post-tensioning (applying tension <em>after</em> the concrete has set). This is more suitable for large elements, especially long beams, which cannot be transported, and therefore need to be poured (5)&nbsp;<input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:120px;">. Before the concrete is poured, ducts (usually plastic tubes) are placed inside the (6)&nbsp;<input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:120px;">&nbsp;along the length of the beam. These ducts contain steel cables. After the concrete has been (7)&nbsp;<input class="blank" type="text" data-idx="6" autocomplete="off" style="min-width:100px;">&nbsp;and has gained sufficient (8)&nbsp;<input class="blank" type="text" data-idx="7" autocomplete="off" style="min-width:120px;">&nbsp;strength, the cables are put in tension, using jacks at either end of the beam. This is only possible because the cables are free to move within the ducts &ndash; it is not possible with pre-tensioned reinforcing bars, which are held fast by the hard (9)&nbsp;<input class="blank" type="text" data-idx="8" autocomplete="off" style="min-width:120px;">&nbsp;surrounding them. The ends of the cables are then permanently anchored at either end of the beam.
+        </p>
+
+        <!-- Beam Diagram -->
+        <div style="margin:20px 0 8px; text-align:center;">
+          <img src="images/beam.png" alt="Diagram showing post-tensioned reinforced concrete beam with steel cables inside ducts anchored at each end" style="max-width:100%; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:block; margin:0 auto;">
+          <p style="text-align:center; margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic;">Post-tensioned reinforced concrete beam: steel cables inside ducts anchored at each end</p>
+        </div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex53')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex53')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex53')">Reset</button>
+        <span class="score" id="ex53-score"></span>
+      </div>
+    </div>
+
+    <!-- Over to you -->
+    <div class="over-to-you">
+      <div class="over-to-you-head"><h3>Over to you</h3></div>
+      <p>Think about a reinforced concrete structure in your area &ndash; for example, a building or a bridge. In what sequence do you think it was built? Do you think it was poured in-situ, or were its parts precast?</p>
+      <textarea id="notes16" placeholder="Type your notes here&hellip;"></textarea>
+      <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
+    </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
+  </div>
+  </section>
+
 
   <div class="wrap">
     <footer>
-      Original reading text and exercises written for this workbook, covering standard engineering-English vocabulary (drawing types and scales, views, design development and revision, design objectives and calculations, horizontal and vertical measurement, locating and setting out, dimensions of circles, dimensional accuracy, numbers and calculations, area, size and mass, measurable parameters, material types, and steel). Not a reproduction of any published textbook.
+      Original reading text and exercises written for this workbook, covering standard engineering-English vocabulary (drawing types and scales, views, design development and revision, design objectives and calculations, horizontal and vertical measurement, locating and setting out, dimensions of circles, dimensional accuracy, numbers and calculations, area, size and mass, measurable parameters, material types, steel, non-ferrous metals, polymers, minerals and ceramics, and concrete). Not a reproduction of any published textbook.
     </footer>
   </div>
 
@@ -2869,6 +3534,46 @@
         { text:'', suffix:'', answers:['anode'] },
       ]
     },
+    // Unit 15
+    ex51: {
+      qs: [
+        { text:'', suffix:'', answers:['sheets','layers'] },
+        { text:'', suffix:'', answers:['laminated'] },
+        { text:'', suffix:'', answers:['bonding','laminating'] },
+        { text:'', suffix:'', answers:['toughened','tempered'] },
+        { text:'', suffix:'', answers:['shatter','shatters','fly','break'] },
+        { text:'', suffix:'', answers:['layers','sheets'] },
+      ]
+    },
+    // Unit 16
+    ex52: {
+      qs: [
+        { answers:['coarse aggregate'] },
+        { answers:['fine aggregate'] },
+        { answers:['cement'] },
+        { answers:['batching'] },
+        { answers:['mix design','concrete mix design','mix designs','concrete mix designs'] },
+        { answers:['28-day strength','28 day strength'] },
+        { answers:['water-cement ratio','water cement ratio'] },
+        { answers:['additives','additive'] },
+        { answers:['retarder','retarders'] },
+        { answers:['plasticizer','plasticiser','plasticizers','plasticisers'] },
+      ]
+    },
+    ex53: {
+      bank: ['cast','concrete','formwork','in-situ','pouring','precast','prestressing','reinforcement','structural'],
+      qs: [
+        { answers:['prestressing'] },
+        { answers:['reinforcement'] },
+        { answers:['pouring'] },
+        { answers:['precast'] },
+        { answers:['in-situ','in situ'] },
+        { answers:['formwork','shuttering'] },
+        { answers:['cast','poured'] },
+        { answers:['structural'] },
+        { answers:['concrete'] },
+      ]
+    },
 
     ex34: {
       qs: [
@@ -2959,6 +3664,7 @@
   buildBank('ex33');
   buildBank('ex36');
   buildBank('ex45');
+  buildBank('ex53');
 
   function checkExercise(exId){
     const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
@@ -3290,6 +3996,38 @@
         { text:'Tungsten is added to steel to make it softer.', options:['True','False'], answer:'False', suffix:'' },
         { text:'High-speed steel is suitable for making cutting tools that get very hot.', options:['True','False'], answer:'True', suffix:'' },
       ]
+    },
+    ex46: {
+      paragraph: true,
+      qs: [
+        { text:'A lot of rubber is made from latex, a', options:['natural','synthetic'], answer:'natural', suffix:'polymer which comes from rubber trees.' },
+        { text:'However, not all rubber comes from trees. Synthetic rubber is a', options:['manmade','natural'], answer:'manmade', suffix:'polymer with similar properties to latex.' },
+        { text:'Plastics are also polymers. Like rubber, they consist of long chains of', options:['atoms','molecules'], answer:'atoms', suffix:'which form extremely large' },
+        { text:'', options:['atoms','molecules'], answer:'molecules', suffix:'.' },
+      ]
+    },
+    ex47: {
+      qs: [
+        { text:'The plastic was heated earlier in the process.', options:['True','False'], answer:'True', suffix:'' },
+        { text:'The plastic has now set.', options:['True','False'], answer:'True', suffix:'' },
+        { text:'The plastic is now liquid.', options:['True','False'], answer:'False', suffix:'' },
+        { text:'To pass one of the tests, the plastic must be an elastomer.', options:['True','False'], answer:'False', suffix:'' },
+        { text:'The description suggests the plastic is a type of engineering plastic.', options:['True','False'], answer:'True', suffix:'' },
+        { text:'The material is a thermosetting plastic.', options:['True','False'], answer:'False', suffix:'' },
+        { text:'The material is a thermoplastic.', options:['True','False'], answer:'True', suffix:'' },
+      ]
+    },
+    // Unit 15
+    ex49: {
+      qs: [
+        { text:'Minerals are organic.', options:['True','False'], answer:'False', suffix:'' },
+        { text:'Minerals can be found in rocks.', options:['True','False'], answer:'True', suffix:'' },
+        { text:'Silica is a compound containing silicon.', options:['True','False'], answer:'True', suffix:'' },
+        { text:'Minerals can be metallic or non-metallic.', options:['True','False'], answer:'True', suffix:'' },
+        { text:'Industrial diamond is an abrasive, metallic mineral.', options:['True','False'], answer:'False', suffix:'' },
+        { text:'In order to become ceramics, materials must be vitrified.', options:['True','False'], answer:'False', suffix:'' },
+        { text:'Clay can be fired to produce material with a glass-like structure.', options:['True','False'], answer:'True', suffix:'' },
+      ]
     }
   };
   function makeOptionsSpan(q, i, onSelect){
@@ -3496,6 +4234,305 @@
   renderChoice('ex35');
   renderChoice('ex37');
   renderChoice('ex40');
+  renderChoice('ex46');
+  renderChoice('ex47');
+  renderChoice('ex49');
+
+  // Exercise 14.3 Crossword Puzzle
+  const PUZZLE_COLS = [
+    { num:1, word:'PVC', valid:['pvc'], startRow:3 },
+    { num:2, word:'MOULDS', valid:['moulds','mould'], startRow:2 },
+    { num:3, word:'MOLECULE', valid:['molecule','molecules'], startRow:1 },
+    { num:4, word:'POLYMER', valid:['polymer','polymers'], startRow:0 },
+    { num:5, word:'CURE', valid:['cure','cures','curing'], startRow:3 },
+    { num:6, word:'ELASTOMER', valid:['elastomer','elastomers'], startRow:1 },
+    { num:7, word:'THERMOSET', valid:['thermoset','thermosets','thermosetting'], startRow:0 },
+    { num:8, word:'RUBBER', valid:['rubber'], startRow:0 },
+    { num:9, word:'EPOXY', valid:['epoxy','epoxies'], startRow:1 },
+    { num:10, word:'MANMADE', valid:['manmade','man made','man-made'], startRow:1 },
+    { num:11, word:'ATOMS', valid:['atoms','atom'], startRow:3 },
+    { num:12, word:'SYNTHETIC', valid:['synthetic','synthetics'], startRow:0 },
+    { num:13, word:'LATEX', valid:['latex'], startRow:0 },
+  ];
+
+  function renderPuzzleGrid(){
+    const grid = document.getElementById('ex48-grid');
+    if(!grid) return;
+    grid.innerHTML = '';
+
+    // Header row: col 0 is blank, cols 1-13 have clue numbers with down arrow
+    const corner = document.createElement('div');
+    grid.appendChild(corner);
+
+    PUZZLE_COLS.forEach(col=>{
+      const th = document.createElement('div');
+      th.style.cssText = 'font-size:0.72rem; font-weight:700; color:var(--ink-soft); text-align:center; padding-bottom:3px;';
+      th.innerHTML = col.num + '<br>&darr;';
+      grid.appendChild(th);
+    });
+
+    // 10 rows: 0 to 9
+    for(let r = 0; r < 10; r++){
+      const side = document.createElement('div');
+      side.style.cssText = 'display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.1rem; color:#b45309;';
+      if(r === 3){
+        side.innerHTML = '&rarr;';
+      }
+      grid.appendChild(side);
+
+      PUZZLE_COLS.forEach((col, cIdx)=>{
+        const cell = document.createElement('div');
+        const colStart = col.startRow;
+        const colEnd = colStart + col.word.length - 1;
+        const isActive = (r >= colStart && r <= colEnd);
+
+        if(isActive){
+          cell.id = 'pcell-' + (cIdx+1) + '-' + r;
+          cell.className = 'puzzle-cell' + (r === 3 ? ' across-cell' : '');
+          const isAcross = (r === 3);
+          cell.style.cssText = 'width:28px; height:28px; border:1px solid ' + (isAcross ? '#f59e0b' : 'var(--line-strong)') + '; ' +
+            'background:' + (isAcross ? '#fef3c7' : 'var(--paper)') + '; ' +
+            'color:' + (isAcross ? '#92400e' : 'var(--ink)') + '; ' +
+            'border-radius:3px; display:flex; align-items:center; justify-content:center; ' +
+            'font-family:\"IBM Plex Mono\", monospace; font-weight:700; font-size:0.92rem; text-transform:uppercase; transition:background 0.2s, border-color 0.2s;';
+        } else {
+          cell.style.cssText = 'width:28px; height:28px;';
+        }
+        grid.appendChild(cell);
+      });
+    }
+
+    document.querySelectorAll('#ex48 .puzzle-inp').forEach(inp=>{
+      inp.addEventListener('input', updatePuzzleGridFromInputs);
+    });
+  }
+
+  function updatePuzzleGridFromInputs(){
+    PUZZLE_COLS.forEach(col=>{
+      const inp = document.querySelector('#ex48 .puzzle-inp[data-clue=\"' + col.num + '\"]');
+      const val = (inp ? inp.value.trim().toUpperCase() : '');
+      for(let i = 0; i < col.word.length; i++){
+        const r = col.startRow + i;
+        const cell = document.getElementById('pcell-' + col.num + '-' + r);
+        if(cell){
+          cell.textContent = val[i] || '';
+        }
+      }
+    });
+  }
+
+  function checkEx48(){
+    let correctCount = 0;
+    PUZZLE_COLS.forEach(col=>{
+      const inp = document.querySelector('#ex48 .puzzle-inp[data-clue=\"' + col.num + '\"]');
+      if(!inp) return;
+      const v = normalize(inp.value);
+      inp.classList.remove('correct','incorrect');
+      if(col.valid.some(ans => normalize(ans) === v)){
+        inp.classList.add('correct');
+        correctCount++;
+        for(let i = 0; i < col.word.length; i++){
+          const r = col.startRow + i;
+          const cell = document.getElementById('pcell-' + col.num + '-' + r);
+          if(cell) cell.style.borderColor = 'var(--good)';
+        }
+      } else {
+        if(v) inp.classList.add('incorrect');
+        for(let i = 0; i < col.word.length; i++){
+          const r = col.startRow + i;
+          const cell = document.getElementById('pcell-' + col.num + '-' + r);
+          if(cell) cell.style.borderColor = (r === 3 ? '#f59e0b' : 'var(--line-strong)');
+        }
+      }
+    });
+
+    const acrossInp = document.getElementById('ex48-across');
+    if(acrossInp){
+      const acrossVal = normalize(acrossInp.value);
+      acrossInp.classList.remove('correct','incorrect');
+      if(acrossVal === 'polycarbonate'){
+        acrossInp.classList.add('correct');
+        correctCount++;
+      } else if(acrossVal){
+        acrossInp.classList.add('incorrect');
+      }
+    }
+
+    const scoreEl = document.getElementById('ex48-score');
+    if(scoreEl){
+      scoreEl.textContent = correctCount + ' / 14 correct';
+      scoreEl.classList.toggle('done', correctCount === 14);
+    }
+  }
+
+  function revealEx48(){
+    PUZZLE_COLS.forEach(col=>{
+      const inp = document.querySelector('#ex48 .puzzle-inp[data-clue=\"' + col.num + '\"]');
+      if(inp){
+        inp.value = col.word;
+        inp.classList.remove('incorrect');
+        inp.classList.add('correct');
+      }
+      for(let i = 0; i < col.word.length; i++){
+        const r = col.startRow + i;
+        const cell = document.getElementById('pcell-' + col.num + '-' + r);
+        if(cell){
+          cell.textContent = col.word[i];
+          cell.style.borderColor = 'var(--good)';
+        }
+      }
+    });
+
+    const acrossInp = document.getElementById('ex48-across');
+    if(acrossInp){
+      acrossInp.value = 'POLYCARBONATE';
+      acrossInp.classList.remove('incorrect');
+      acrossInp.classList.add('correct');
+    }
+
+    const scoreEl = document.getElementById('ex48-score');
+    if(scoreEl){
+      scoreEl.textContent = 'Answers revealed';
+      scoreEl.classList.add('done');
+    }
+  }
+
+  function resetEx48(){
+    PUZZLE_COLS.forEach(col=>{
+      const inp = document.querySelector('#ex48 .puzzle-inp[data-clue=\"' + col.num + '\"]');
+      if(inp){
+        inp.value = '';
+        inp.classList.remove('correct','incorrect');
+      }
+      for(let i = 0; i < col.word.length; i++){
+        const r = col.startRow + i;
+        const cell = document.getElementById('pcell-' + col.num + '-' + r);
+        if(cell){
+          cell.textContent = '';
+          cell.style.borderColor = (r === 3 ? '#f59e0b' : 'var(--line-strong)');
+        }
+      }
+    });
+
+    const acrossInp = document.getElementById('ex48-across');
+    if(acrossInp){
+      acrossInp.value = '';
+      acrossInp.classList.remove('correct','incorrect');
+    }
+
+    const scoreEl = document.getElementById('ex48-score');
+    if(scoreEl){
+      scoreEl.textContent = '';
+      scoreEl.classList.remove('done');
+    }
+  }
+
+  renderPuzzleGrid();
+
+  // Exercise 15.2 checker
+  function checkEx50(){
+    let correctCount = 0;
+
+    function checkGroup(inputs, validAnswers){
+      const entered = inputs.map(inp => normalize(inp.value));
+      const used = [];
+      inputs.forEach((inp, idx)=>{
+        const val = entered[idx];
+        inp.classList.remove('correct','incorrect');
+        if(val && validAnswers.some(ans => normalize(ans) === val) && !used.includes(val)){
+          inp.classList.add('correct');
+          used.push(val);
+          correctCount++;
+        } else if(val){
+          inp.classList.add('incorrect');
+        }
+      });
+    }
+
+    const p1Inputs = [
+      document.getElementById('ex50-p1-0'),
+      document.getElementById('ex50-p1-1'),
+      document.getElementById('ex50-p1-2')
+    ];
+    checkGroup(p1Inputs, ['safety glass', 'laminated glass', 'windscreen', 'windshield']);
+
+    const p2Inputs = [
+      document.getElementById('ex50-p2-0'),
+      document.getElementById('ex50-p2-1'),
+      document.getElementById('ex50-p2-2')
+    ];
+    checkGroup(p2Inputs, ['safety glass', 'toughened glass', 'tempered glass']);
+
+    const p3Input = document.getElementById('ex50-p3-0');
+    if(p3Input){
+      p3Input.classList.remove('correct','incorrect');
+      const v = normalize(p3Input.value);
+      if(v === 'annealed glass'){
+        p3Input.classList.add('correct');
+        correctCount++;
+      } else if(v){
+        p3Input.classList.add('incorrect');
+      }
+    }
+
+    const scoreEl = document.getElementById('ex50-score');
+    if(scoreEl){
+      scoreEl.textContent = correctCount + ' / 7 correct';
+      scoreEl.classList.toggle('done', correctCount === 7);
+    }
+  }
+
+  function revealEx50(){
+    const p1Inputs = [
+      document.getElementById('ex50-p1-0'),
+      document.getElementById('ex50-p1-1'),
+      document.getElementById('ex50-p1-2')
+    ];
+    const p1Ans = ['safety glass', 'laminated glass', 'windscreen'];
+    p1Inputs.forEach((inp, i)=>{
+      if(inp){ inp.value = p1Ans[i]; inp.classList.remove('incorrect'); inp.classList.add('correct'); }
+    });
+
+    const p2Inputs = [
+      document.getElementById('ex50-p2-0'),
+      document.getElementById('ex50-p2-1'),
+      document.getElementById('ex50-p2-2')
+    ];
+    const p2Ans = ['safety glass', 'toughened glass', 'tempered glass'];
+    p2Inputs.forEach((inp, i)=>{
+      if(inp){ inp.value = p2Ans[i]; inp.classList.remove('incorrect'); inp.classList.add('correct'); }
+    });
+
+    const p3Input = document.getElementById('ex50-p3-0');
+    if(p3Input){
+      p3Input.value = 'annealed glass';
+      p3Input.classList.remove('incorrect');
+      p3Input.classList.add('correct');
+    }
+
+    const scoreEl = document.getElementById('ex50-score');
+    if(scoreEl){
+      scoreEl.textContent = 'Answers revealed';
+      scoreEl.classList.add('done');
+    }
+  }
+
+  function resetEx50(){
+    for(let i = 0; i < 3; i++){
+      const el1 = document.getElementById('ex50-p1-' + i);
+      if(el1){ el1.value = ''; el1.classList.remove('correct','incorrect'); }
+      const el2 = document.getElementById('ex50-p2-' + i);
+      if(el2){ el2.value = ''; el2.classList.remove('correct','incorrect'); }
+    }
+    const p3 = document.getElementById('ex50-p3-0');
+    if(p3){ p3.value = ''; p3.classList.remove('correct','incorrect'); }
+
+    const scoreEl = document.getElementById('ex50-score');
+    if(scoreEl){
+      scoreEl.textContent = '';
+      scoreEl.classList.remove('done');
+    }
+  }
 
   // Build the 2.4 email body around the cloze inputs
   document.getElementById('ex8-body').innerHTML =
@@ -3504,7 +4541,7 @@
   buildCloze('ex8');
 
   // Notes autosave (per unit)
-  [['notes1','drawings-unit1-notes'], ['notes2','drawings-unit2-notes'], ['notes3','drawings-unit3-notes'], ['notes4','drawings-unit4-notes'], ['notes5','drawings-unit5-notes'], ['notes6','drawings-unit6-notes'], ['notes7','drawings-unit7-notes'], ['notes8','drawings-unit8-notes'], ['notes9','drawings-unit9-notes'], ['notes10','drawings-unit10-notes'], ['notes11','drawings-unit11-notes'], ['notes12','drawings-unit12-notes'], ['notes13','drawings-unit13-notes']].forEach(([id,key])=>{
+  [['notes1','drawings-unit1-notes'], ['notes2','drawings-unit2-notes'], ['notes3','drawings-unit3-notes'], ['notes4','drawings-unit4-notes'], ['notes5','drawings-unit5-notes'], ['notes6','drawings-unit6-notes'], ['notes7','drawings-unit7-notes'], ['notes8','drawings-unit8-notes'], ['notes9','drawings-unit9-notes'], ['notes10','drawings-unit10-notes'], ['notes11','drawings-unit11-notes'], ['notes12','drawings-unit12-notes'], ['notes13','drawings-unit13-notes'], ['notes14','drawings-unit14-notes'], ['notes15','drawings-unit15-notes'], ['notes16','drawings-unit16-notes']].forEach(([id,key])=>{
     try{
       const el = document.getElementById(id);
       const saved = localStorage.getItem(key);
