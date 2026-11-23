@@ -1,4 +1,25 @@
-<!doctype html><html><head><link rel="icon" type="image/png" href="images/cube-favicon.png"><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><link rel="icon" type="image/png" href="images/cube-favicon.png"><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}  .chip-btn{
+    font-family:"Poppins",sans-serif;
+    font-size:0.85rem;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:4px;
+    border:1.5px solid var(--line-strong);
+    background:#f4f7fa;
+    color:var(--navy-mid);
+    cursor:pointer;
+    transition:all 0.15s ease;
+  }
+  .chip-btn:hover{
+    background:#e2ebf3;
+    border-color:var(--navy-mid);
+  }
+  .chip-btn.active{
+    background:var(--navy-fill);
+    border-color:var(--navy-fill);
+    color:#fff;
+  }
+</style></head><body>
 <title>Engineering English, Interactive</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Patrick+Hand&display=swap">
 <style>
@@ -604,6 +625,16 @@
         <span class="contents-num">16</span>
         <span class="contents-text"><strong>Concrete</strong></span>
       </a>
+      <a class="contents-card" href="#unit17">
+        <span class="contents-num">17</span>
+        <span class="contents-text"><strong>Wood</strong></span>
+      </a>
+      <a class="contents-card" href="#unit18">
+        <span class="contents-num">18</span>
+        <span class="contents-text"><strong>Material properties 1</strong></span>
+      </a>
+
+
     </div>
   </div>
 </div>
@@ -2448,11 +2479,11 @@
               <td style="padding:12px 16px; font-weight:700; background:var(--navy-fill); color:#fff; white-space:nowrap; width:160px;">Metal elements</td>
               <td style="padding:12px 16px;">
                 <div style="display:flex; flex-wrap:wrap; gap:8px;">
-                  <input class="blank" type="text" data-idx="0" autocomplete="off" placeholder="metal 1" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="1" autocomplete="off" placeholder="metal 2" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="2" autocomplete="off" placeholder="metal 3" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="3" autocomplete="off" placeholder="metal 4" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="4" autocomplete="off" placeholder="metal 5" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
                 </div>
               </td>
             </tr>
@@ -2460,9 +2491,9 @@
               <td style="padding:12px 16px; font-weight:700; background:var(--navy-fill); color:#fff;">Alloys</td>
               <td style="padding:12px 16px;">
                 <div style="display:flex; flex-wrap:wrap; gap:8px;">
-                  <input class="blank" type="text" data-idx="5" autocomplete="off" placeholder="alloy 1" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="6" autocomplete="off" placeholder="alloy 2" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="7" autocomplete="off" placeholder="alloy 3" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="6" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="7" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
                 </div>
               </td>
             </tr>
@@ -2470,8 +2501,8 @@
               <td style="padding:12px 16px; font-weight:700; background:var(--navy-fill); color:#fff; white-space:nowrap;">Precious metals</td>
               <td style="padding:12px 16px;">
                 <div style="display:flex; flex-wrap:wrap; gap:8px;">
-                  <input class="blank" type="text" data-idx="8" autocomplete="off" placeholder="precious 1" style="min-width:120px; flex:1 1 120px;">
-                  <input class="blank" type="text" data-idx="9" autocomplete="off" placeholder="precious 2" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="8" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
+                  <input class="blank" type="text" data-idx="9" autocomplete="off" style="min-width:120px; flex:1 1 120px;">
                 </div>
               </td>
             </tr>
@@ -2480,9 +2511,9 @@
       </div>
 
       <div class="exercise-controls">
-        <button class="btn" onclick="checkExercise('ex44')">Check</button>
-        <button class="btn secondary" onclick="revealExercise('ex44')">Reveal</button>
-        <button class="btn secondary" onclick="resetExercise('ex44')">Reset</button>
+        <button class="btn" onclick="checkEx44()">Check</button>
+        <button class="btn secondary" onclick="revealEx44()">Reveal</button>
+        <button class="btn secondary" onclick="resetEx44()">Reset</button>
         <span class="score" id="ex44-score"></span>
       </div>
     </div>
@@ -3188,10 +3219,444 @@
   </div>
   </section>
 
+  <!-- ============ UNIT 17 ============ -->
+  <section id="unit17">
+
+    <div class="unit-hero">
+      <div class="unit-hero-inner">
+        <div class="unit-badge">17</div>
+        <div>
+          <p class="kicker">Unit 17</p>
+          <h1>Wood</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrap">
+    <div class="sec-head"><div class="badge">A</div><h2>Categories of wood</h2></div>
+
+    <p class="lede">This section introduces the classification of natural and manufactured wood materials.</p>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <div class="inline-figure-wrap" style="margin:0 0 16px;">
+        <figure class="inline-figure" style="width:260px; max-width:44%; margin:0 0 16px 22px; float:right;">
+          <img src="images/grain.png" alt="Natural structure of solid wood showing grain and knot" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; display:block;">
+          <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Solid wood with grain and knot</figcaption>
+        </figure>
+
+        <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">The two main categories of wood are:</p>
+        <ul style="margin:0 0 16px; padding-left:22px; line-height:1.75; font-size:0.98rem;">
+          <li><strong>hardwood</strong> &ndash; usually from deciduous trees, which lose their leaves in autumn, although some hardwood (for example, tropical hardwood) comes from other types of tree</li>
+          <li><strong>softwood</strong> &ndash; from coniferous trees, which remain green throughout the year.</li>
+        </ul>
+
+        <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">In engineering, wood can be categorised as:</p>
+        <ul style="margin:0 0 16px; padding-left:22px; line-height:1.75; font-size:0.98rem;">
+          <li><strong>solid wood</strong> &ndash; softwood or hardwood that has been sawn into specific shapes and sizes, but whose natural structure, consisting of <strong>grain</strong> and <strong>knots</strong>, remains intact</li>
+          <li><strong>engineered wood</strong> &ndash; made by <strong>bonding</strong> (sticking together) layers of solid softwood or hardwood, or by mixing quantities of wood particles and bonding them with resin.</li>
+        </ul>
+      </div>
+
+      <div class="notes-box" style="margin-top:18px; clear:both;">
+        <strong>Note:</strong>
+        <p style="margin:6px 0 0; line-height:1.6;">
+          In industry, wood is often referred to as <strong>timber</strong> (BrE) or <strong>lumber</strong> (AmE). In American English, <em>timber</em> generally means wood that is still growing in trees.
+        </p>
+      </div>
+
+      <div class="notes-box" style="margin-top:12px; background:#fee0e0; border:1px solid #ff0000;">
+        <div>Knot is pronounced /nɒt/ (the <em>k</em> is silent)</div>
+        <audio controls preload="none" style="margin-top:10px; width:100%;">
+          <source src="images/knot.wav" type="audio/wav">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+    </div>
+
+    <div class="sec-head"><div class="badge">B</div><h2>Solid structural timber</h2></div>
+
+    <p class="lede">The text below is from a technical handbook about structural timber &ndash; wood intended to support loads in a structure.</p>
+
+    <div class="textbook-page" style="background:#fffefb; border:1px solid #e0d8cc; border-left:5px solid #2d5a7b; border-radius:6px; box-shadow:0 2px 5px rgba(45,35,20,0.04), 0 8px 24px rgba(45,35,20,0.08); padding:26px 30px; margin:22px 0 28px;">
+      <div style="border-bottom:1.5px solid #2d5a7b; padding-bottom:10px; margin-bottom:18px; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px;">
+        <span style="font-family:'Poppins',sans-serif; font-size:1.05rem; font-weight:700; color:#1a365d; letter-spacing:0.2px;">Handbook of Structural Timber</span>
+        <span style="font-family:'Georgia',Cambria,serif; font-size:0.8rem; color:#786f66; font-style:italic;">Section 3 &bull; Materials &amp; Workmanship</span>
+      </div>
+
+      <p style="margin:0 0 16px; line-height:1.85; font-size:1.02rem; font-family:'Georgia',Cambria,serif; color:#24201c;">
+        Generally, timber is cut to the required <strong>section</strong> &ndash; the width and depth that determine its cross-section &ndash; at a <strong>sawmill</strong>, where a range of section sizes are produced. Timber from sawmills is generally supplied in <strong>rough-sawn</strong> sections. This refers to the surface texture produced by sawing timber with a <strong>circular saw</strong>. If the timber needs to have a smooth finish &ndash; for example, because it will be visible in the structure &ndash; it can subsequently be <strong>planed</strong> to smooth its surface.
+      </p>
+
+      <p style="margin:0; line-height:1.85; font-size:1.02rem; font-family:'Georgia',Cambria,serif; color:#24201c;">
+        Because the strength of wood varies, structural timber must be <strong>stress-graded</strong>. This means its strength is tested in order to give it a <strong>stress grade</strong> &ndash; a standard strength value which an engineer can use for design calculations. Timber can be <strong>mechanically stress-graded</strong>, where its strength is checked by machine. It can also be <strong>visually stress-graded</strong>, where the wood is examined by an inspector who looks for potential weaknesses &ndash; in particular, the position of knots.
+      </p>
+
+      <div style="margin-top:22px; padding-top:10px; border-top:1px solid #ede7dc; display:flex; justify-content:space-between; align-items:center; font-family:'Georgia',Cambria,serif; font-size:0.78rem; color:#8c8275; font-style:italic;">
+        <span>Structural engineering handbook extract</span>
+        <span>Page 42</span>
+      </div>
+    </div>
+
+    <div class="sec-head"><div class="badge">C</div><h2>Engineered wood</h2></div>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 24px;">
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+        Engineered wood covers a range of softwood and hardwood materials. It includes:
+      </p>
+
+      <ul style="margin:0 0 16px; padding-left:22px; line-height:1.75; font-size:0.98rem;">
+        <li>cheap, low-strength boards, such as <strong>particle board</strong> (often called <strong>chipboard</strong>) and <strong>medium-density fibreboard (MDF)</strong></li>
+        <li>stronger boards suitable for structural use &ndash; primarily <strong>orientated strand board (OSB)</strong>, which is made from strands of wood bonded with resin, and <strong>plywood</strong>, which consists of several plies (layers) of solid wood, bonded so that the grain of each ply runs at 90 degrees to that of the adjacent plies, to provide increased strength</li>
+        <li><strong>glue-laminated sections</strong> &ndash; sometimes called <strong>glulams</strong> &ndash; which can be used as major structural elements, such as beams, in large buildings.</li>
+      </ul>
+    </div>
+
+    <!-- Part C Materials Row: Chipboard, OSB, Plywood -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; margin:0 0 28px;">
+      <figure style="margin:0;">
+        <img src="images/chipboard.png" alt="Particle board or chipboard" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; height:160px; object-fit:cover; display:block;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Particle board or chipboard</figcaption>
+      </figure>
+
+      <figure style="margin:0;">
+        <img src="images/OSB.png" alt="Orientated strand board (OSB)" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; height:160px; object-fit:cover; display:block;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Orientated strand board (OSB)</figcaption>
+      </figure>
+
+      <figure style="margin:0;">
+        <img src="images/plywood.png" alt="Plywood" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; height:160px; object-fit:cover; display:block;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Plywood</figcaption>
+      </figure>
+    </div>
+
+    <!-- Exercise 17.1 -->
+    <div class="exercise" id="ex54">
+      <h3><span class="exercise-num">17.1</span> Categories of wood</h3>
+      <p class="instructions">Match the two parts to make correct sentences about wood. In each case, there is more than one possible answer. Type the letters or click the chips to select. Look at A above to help you.</p>
+
+      <div style="background:#f4f7fa; border:1px solid #d2dce5; border-radius:8px; padding:18px 20px; margin-bottom:20px;">
+        <p style="margin:0 0 10px; font-weight:600; color:var(--navy-mid);">Statements:</p>
+        <ul style="list-style:none; padding:0; margin:0; line-height:1.9; font-size:0.95rem;">
+          <li><strong>a</strong> comes only from coniferous trees.</li>
+          <li><strong>b</strong> comes only from deciduous trees.</li>
+          <li><strong>c</strong> can come from either coniferous or deciduous trees.</li>
+          <li><strong>d</strong> specifically describes single pieces of timber, not multiple pieces that have been bonded together.</li>
+          <li><strong>e</strong> is always made from multiple pieces or particles of wood.</li>
+          <li><strong>f</strong> may have knots in it.</li>
+        </ul>
+      </div>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:22px 24px; box-shadow:0 3px 12px rgba(18,48,74,0.06); margin-bottom:20px;">
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding-bottom:14px; border-bottom:1px solid #eef2f6;">
+            <div style="font-weight:600; font-size:1rem; min-width:180px;">1. Engineered wood</div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <input class="blank" type="text" id="ex54-0" data-idx="0" autocomplete="off" style="min-width:90px; text-align:center;">
+              <div class="letter-chips" data-target="ex54-0" style="display:inline-flex; gap:5px;">
+                <button type="button" class="chip-btn" data-char="a" onclick="toggleLetter('ex54-0','a')">a</button>
+                <button type="button" class="chip-btn" data-char="b" onclick="toggleLetter('ex54-0','b')">b</button>
+                <button type="button" class="chip-btn" data-char="c" onclick="toggleLetter('ex54-0','c')">c</button>
+                <button type="button" class="chip-btn" data-char="d" onclick="toggleLetter('ex54-0','d')">d</button>
+                <button type="button" class="chip-btn" data-char="e" onclick="toggleLetter('ex54-0','e')">e</button>
+                <button type="button" class="chip-btn" data-char="f" onclick="toggleLetter('ex54-0','f')">f</button>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding-bottom:14px; border-bottom:1px solid #eef2f6;">
+            <div style="font-weight:600; font-size:1rem; min-width:180px;">2. Softwood</div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <input class="blank" type="text" id="ex54-1" data-idx="1" autocomplete="off" style="min-width:90px; text-align:center;">
+              <div class="letter-chips" data-target="ex54-1" style="display:inline-flex; gap:5px;">
+                <button type="button" class="chip-btn" data-char="a" onclick="toggleLetter('ex54-1','a')">a</button>
+                <button type="button" class="chip-btn" data-char="b" onclick="toggleLetter('ex54-1','b')">b</button>
+                <button type="button" class="chip-btn" data-char="c" onclick="toggleLetter('ex54-1','c')">c</button>
+                <button type="button" class="chip-btn" data-char="d" onclick="toggleLetter('ex54-1','d')">d</button>
+                <button type="button" class="chip-btn" data-char="e" onclick="toggleLetter('ex54-1','e')">e</button>
+                <button type="button" class="chip-btn" data-char="f" onclick="toggleLetter('ex54-1','f')">f</button>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+            <div style="font-weight:600; font-size:1rem; min-width:180px;">3. Solid wood</div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <input class="blank" type="text" id="ex54-2" data-idx="2" autocomplete="off" style="min-width:90px; text-align:center;">
+              <div class="letter-chips" data-target="ex54-2" style="display:inline-flex; gap:5px;">
+                <button type="button" class="chip-btn" data-char="a" onclick="toggleLetter('ex54-2','a')">a</button>
+                <button type="button" class="chip-btn" data-char="b" onclick="toggleLetter('ex54-2','b')">b</button>
+                <button type="button" class="chip-btn" data-char="c" onclick="toggleLetter('ex54-2','c')">c</button>
+                <button type="button" class="chip-btn" data-char="d" onclick="toggleLetter('ex54-2','d')">d</button>
+                <button type="button" class="chip-btn" data-char="e" onclick="toggleLetter('ex54-2','e')">e</button>
+                <button type="button" class="chip-btn" data-char="f" onclick="toggleLetter('ex54-2','f')">f</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkEx54()">Check</button>
+        <button class="btn secondary" onclick="revealEx54()">Reveal</button>
+        <button class="btn secondary" onclick="resetEx54()">Reset</button>
+        <span class="score" id="ex54-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 17.2 -->
+    <div class="exercise" id="ex55">
+      <h3><span class="exercise-num">17.2</span> Solid structural timber</h3>
+      <p class="instructions">Complete the sentences below using words and expressions from B above.</p>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:22px 24px; box-shadow:0 3px 12px rgba(18,48,74,0.06); margin-bottom:20px;">
+        <ol style="margin:0; padding-left:22px; font-size:0.98rem; line-height:2.4;">
+          <li style="margin-bottom:10px;">
+            Wood has a smooth finish after it has been <input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:140px;">.
+          </li>
+          <li style="margin-bottom:10px;">
+            Wood cut with a circular saw is called <input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:170px;">.
+          </li>
+          <li style="margin-bottom:10px;">
+            After timber is tested for strengths and weaknesses, it is given a <input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:150px;">.
+          </li>
+          <li style="margin-bottom:10px;">
+            When timber is inspected by a person who looks for weaknesses, it is <input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:210px;">.
+          </li>
+          <li style="margin-bottom:4px;">
+            When timber is inspected by a machine which tests its strength, it is <input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:230px;">.
+          </li>
+        </ol>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex55')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex55')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex55')">Reset</button>
+        <span class="score" id="ex55-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 17.3 -->
+    <div class="exercise" id="ex56">
+      <h3><span class="exercise-num">17.3</span> Environmental considerations of wood</h3>
+      <p class="instructions">Complete the article about the environmental considerations of wood using words from B and C above.</p>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:18px 0 20px;">
+        <div class="inline-figure-wrap" style="overflow:hidden;">
+          <figure class="inline-figure" style="width:280px; max-width:44%; margin:0 0 16px 24px; float:right;">
+            <img src="images/parliament.png" alt="Glue-laminated timber in the Scottish Parliament building in Edinburgh, Scotland" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; display:block;">
+            <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Glue-laminated timber in the Scottish Parliament building in Edinburgh, Scotland</figcaption>
+          </figure>
+
+          <p style="margin:0 0 16px; line-height:2.2; font-size:0.98rem;">
+            From an environmental perspective, wood has many advantages. Firstly, it comes from a sustainable source. Coniferous trees grow relatively fast, providing a rapidly replaceable source of (1)&nbsp;<input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:130px;">. Secondly, almost all the timber in a tree can be utilised, leaving little or no waste. The best quality wood can be used for structural applications, where solid, (2)&nbsp;<input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:140px;">&nbsp;sections are required by engineers; for high-strength elements such as (3)&nbsp;<input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:140px;">&nbsp;beams; and in the high-quality plies used to make (4)&nbsp;<input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:120px;">. Smaller strands can be made into engineering wood with structural properties, such as (5)&nbsp;<input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:120px;">. And small particles and fibres, including those from waste timber, can go into cheaper materials, like (6)&nbsp;<input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:110px;">&nbsp;board and (7)&nbsp;<input class="blank" type="text" data-idx="6" autocomplete="off" style="min-width:110px;">.
+          </p>
+        </div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex56')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex56')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex56')">Reset</button>
+        <span class="score" id="ex56-score"></span>
+      </div>
+    </div>
+
+    <!-- Over to you -->
+    <div class="over-to-you">
+      <div class="over-to-you-head"><h3>Over to you</h3></div>
+      <p>What types of timber are used in your home and/or office, both as building materials and to make fixtures and furniture within the building?</p>
+      <textarea id="notes17" placeholder="Type your notes here&hellip;"></textarea>
+      <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
+    </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
+  </div>
+  </section>
+
+  <!-- ============ UNIT 18 ============ -->
+  <section id="unit18">
+
+    <div class="unit-hero">
+      <div class="unit-hero-inner">
+        <div class="unit-badge">18</div>
+        <div>
+          <p class="kicker">Unit 18</p>
+          <h1>Material properties 1</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrap">
+    <div class="sec-head"><div class="badge">A</div><h2>Tensile strength and deformation</h2></div>
+
+    <p class="lede">When materials are exposed to forces, they deform &ndash; changing shape in response to tension or compression.</p>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+        When materials are exposed to forces, such as <strong>tension</strong> (stretching forces &larr;&nbsp;[&nbsp;]&nbsp;&rarr;) and <strong>compression</strong> (crushing forces &rarr;&nbsp;[&nbsp;]&nbsp;&larr;), they <strong>deform</strong> &ndash; that is, they change shape. The type of deformation depends on the type of force that is applied.
+      </p>
+
+      <p style="margin:0; line-height:1.75; font-size:0.98rem;">
+        When a material is subjected to tension, its length will increase by a certain amount. This is called <strong>extension</strong> or <strong>elongation</strong>. It is especially important to understand the performance of materials in tension, as their <strong>tensile strength</strong> (ability to resist tension) is usually lower than their <strong>compressive strength</strong> (ability to resist compression).
+      </p>
+    </div>
+
+    <div class="sec-head"><div class="badge">B</div><h2>Elasticity and plasticity</h2></div>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+        Some materials can extend significantly, but still return to their original shape. A material's ability to do this is called <strong>elasticity</strong>. Rubber is an example of a very elastic material &ndash; it can be <strong>elastically deformed</strong> to a considerable extent.
+      </p>
+
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+        If a material has very low elasticity, and is strong, engineers say it is <strong>stiff</strong>. If a material has low elasticity and is weak, it is described as <strong>brittle</strong> &ndash; that is, it <strong>fractures</strong> (breaks, due to tension) very easily. Glass is an example of a brittle material.
+      </p>
+
+      <p style="margin:0; line-height:1.75; font-size:0.98rem;">
+        Some materials can change shape significantly, but do not return to their original shape. We say these materials are <strong>plastic</strong>. Often, <strong>plasticity</strong> is described in specific terms. A material that can be plastically deformed by hammering or rolling &ndash; for example, lead (Pb) &ndash; is <strong>malleable</strong>. A material that can be drawn out (stretched) into a long length &ndash; for example, copper (Cu) &ndash; is <strong>ductile</strong>.
+      </p>
+    </div>
+
+    <div class="sec-head"><div class="badge">C</div><h2>Stages in elastic and plastic deformation</h2></div>
+
+    <div class="reading-block" style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:22px 0 28px;">
+      <p style="margin:0 0 14px; line-height:1.75; font-size:0.98rem;">
+        The graph below shows the typical extension behaviour of ductile materials in <strong>tensile testing</strong> &ndash; where a sample bar is subjected to a progressively increasing tensile force.
+      </p>
+
+      <ul style="margin:0 0 18px; padding-left:22px; line-height:1.75; font-size:0.98rem;">
+        <li style="margin-bottom:8px;"><strong>Points 0&ndash;1:</strong> The extension of the bar is proportional to the increase in tension. For example, when tension increases by 10%, length increases by 10%.</li>
+        <li style="margin-bottom:8px;"><strong>Point 1:</strong> The bar reaches the <strong>limit of proportionality</strong>. Beyond this point, length begins to increase at a slightly greater rate than tension.</li>
+        <li style="margin-bottom:8px;"><strong>Point 2:</strong> The <strong>elastic limit</strong> is reached. Beyond this point, the bar will no longer return to its original length. In many materials, the elastic limit occurs almost immediately after the limit of proportionality.</li>
+        <li style="margin-bottom:8px;"><strong>Point 3:</strong> The bar reaches its <strong>yield point</strong>. Once it yields, it continues to increase in length, even without a further increase in tension.</li>
+        <li style="margin-bottom:8px;"><strong>Point 4:</strong> This is the <strong>ultimate tensile strength (UTS)</strong> of the material. Beyond this point, a <strong>waist</strong> (a narrower section) appears at a point along the length of the bar, signalling that it is about to fracture.</li>
+        <li><strong>Point 5:</strong> This is the <strong>fracture point</strong>, where the bar breaks in two.</li>
+      </ul>
+
+      <figure style="margin:20px 0 6px; text-align:center;">
+        <img src="images/tensile_test_graph.png" alt="Tensile test curve showing tensile load vs extension, limit of proportionality, elastic limit, yield point, ultimate tensile strength, and fracture point" style="max-width:100%; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:block; margin:0 auto;">
+        <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Typical tensile test curve and deformation stages for a ductile material</figcaption>
+      </figure>
+    </div>
+
+    <!-- Exercise 18.1 -->
+    <div class="exercise" id="ex57">
+      <h3><span class="exercise-num">18.1</span> Tensile strength and deformation</h3>
+      <p class="instructions">Complete the sentences using the words in the box. You will need to use one word twice. Look at A above to help you.</p>
+
+      <div class="word-bank" id="ex57-bank" style="margin-bottom:20px;">
+        <span class="word-chip">compression</span>
+        <span class="word-chip">deformation</span>
+        <span class="word-chip">elongation</span>
+        <span class="word-chip">extension</span>
+        <span class="word-chip">tension</span>
+      </div>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; padding:22px 24px; box-shadow:0 3px 12px rgba(18,48,74,0.06); margin-bottom:20px;">
+        <ol style="margin:0; padding-left:22px; font-size:0.98rem; line-height:2.4;">
+          <li style="margin-bottom:10px;">
+            A stretching force is called <input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:130px;">.
+          </li>
+          <li style="margin-bottom:10px;">
+            A crushing force is called <input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:140px;">.
+          </li>
+          <li style="margin-bottom:10px;">
+            Extension is also called <input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:140px;">.
+          </li>
+          <li style="margin-bottom:10px;">
+            Tension causes <input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:130px;"> or <input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:130px;">.
+          </li>
+          <li style="margin-bottom:4px;">
+            Tension or compression cause <input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:140px;">.
+          </li>
+        </ol>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex57')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex57')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex57')">Reset</button>
+        <span class="score" id="ex57-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 18.2 -->
+    <div class="exercise" id="ex58">
+      <h3><span class="exercise-num">18.2</span> Material properties and deformation</h3>
+      <p class="instructions">Match the two parts to make correct sentences. Click an item on the left, then click its match on the right. Look at B and C above to help you.</p>
+
+      <div class="match-grid">
+        <div class="match-col" id="ex58-match-left"></div>
+        <div class="match-col" id="ex58-match-right"></div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn secondary" onclick="resetMatch('ex58')">Reset</button>
+        <span class="score" id="ex58-score"></span>
+      </div>
+    </div>
+
+    <!-- Exercise 18.3 -->
+    <div class="exercise" id="ex59">
+      <h3><span class="exercise-num">18.3</span> Automotive suspension springs</h3>
+      <p class="instructions">Complete the magazine article about springs using words from A, B and C above.</p>
+
+      <div style="background:#fff; border:1px solid #d2dce5; border-radius:8px; box-shadow:0 3px 12px rgba(18,48,74,0.06); padding:24px 26px; margin:18px 0 20px;">
+        <div class="inline-figure-wrap" style="overflow:hidden;">
+          <figure class="inline-figure" style="width:280px; max-width:44%; margin:0 0 16px 24px; float:right;">
+            <img src="images/suspension.png" alt="Coil spring in car suspension" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); width:100%; display:block;">
+            <figcaption style="margin-top:8px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; text-align:center;">Coil spring in automotive suspension</figcaption>
+          </figure>
+
+          <div style="border-left:4px solid var(--navy-mid); padding-left:14px; margin-bottom:16px;">
+            <h4 style="margin:0; font-size:1.15rem; color:var(--navy-mid); font-family:'Poppins',sans-serif;">Putting the spring into springs</h4>
+          </div>
+
+          <p style="margin:0 0 16px; line-height:2.2; font-size:0.98rem;">
+            How are the springs used in car suspension made springy? It sounds like a silly question, but think about it for a moment. In order for a spring to compress or extend, then return to its original shape, it must be (1)&nbsp;<input class="blank" type="text" data-idx="0" autocomplete="off" style="min-width:120px;">. But springs are made from wire, and wire is made from very (2)&nbsp;<input class="blank" type="text" data-idx="1" autocomplete="off" style="min-width:120px;">&nbsp;metal (often cold-drawn carbon steel). When the wire is manufactured, it is not only stretched beyond its (3)&nbsp;<input class="blank" type="text" data-idx="2" autocomplete="off" style="min-width:130px;">&nbsp;&ndash; meaning it will no longer return to its original length &ndash; but also beyond its (4)&nbsp;<input class="blank" type="text" data-idx="3" autocomplete="off" style="min-width:130px;">, where significant, irreversible (5)&nbsp;<input class="blank" type="text" data-idx="4" autocomplete="off" style="min-width:150px;">&nbsp;occurs.
+          </p>
+
+          <p style="margin:0 0 16px; line-height:2.2; font-size:0.98rem;">
+            The metal from which springs are made has therefore been (6)&nbsp;<input class="blank" type="text" data-idx="5" autocomplete="off" style="min-width:130px;">&nbsp;deformed and, consequently, needs to have its springiness put back.
+          </p>
+
+          <p style="margin:0; line-height:2.2; font-size:0.98rem;">
+            To do this, once a spring has been formed into a coil, it is tempered &ndash; a process in which it is heated and kept at a high temperature for a sustained period. This &lsquo;resets&rsquo; the atomic structure of the metal (partly, at least), so that after tempering, the spring will behave as it should &ndash; it can be (7)&nbsp;<input class="blank" type="text" data-idx="6" autocomplete="off" style="min-width:130px;">&nbsp;deformed and will subsequently return to its original shape.
+          </p>
+        </div>
+      </div>
+
+      <div class="exercise-controls">
+        <button class="btn" onclick="checkExercise('ex59')">Check</button>
+        <button class="btn secondary" onclick="revealExercise('ex59')">Reveal</button>
+        <button class="btn secondary" onclick="resetExercise('ex59')">Reset</button>
+        <span class="score" id="ex59-score"></span>
+      </div>
+    </div>
+
+    <!-- Over to you -->
+    <div class="over-to-you">
+      <div class="over-to-you-head"><h3>Over to you</h3></div>
+      <p>Think about a device, vehicle or structure you're familiar with, and the materials used to make it. What properties do the materials have? Which properties are strengths in this situation? Which properties are weaknesses, and how are these weaknesses overcome?</p>
+      <textarea id="notes18" placeholder="Type your notes here&hellip;"></textarea>
+      <div class="save-note">Saved automatically in this browser only &mdash; not shared with anyone.</div>
+    </div>
+
+    <div class="unit-bottom-bar">
+      <a href="#top" class="contents-chip"><span class="chip-icon">&larr;</span> Contents</a>
+    </div>
+  </div>
+  </section>
+
+
+
 
   <div class="wrap">
     <footer>
-      Original reading text and exercises written for this workbook, covering standard engineering-English vocabulary (drawing types and scales, views, design development and revision, design objectives and calculations, horizontal and vertical measurement, locating and setting out, dimensions of circles, dimensional accuracy, numbers and calculations, area, size and mass, measurable parameters, material types, steel, non-ferrous metals, polymers, minerals and ceramics, and concrete). Not a reproduction of any published textbook.
+      Original reading text and exercises written for this workbook, covering standard engineering-English vocabulary (drawing types and scales, views, design development and revision, design objectives and calculations, horizontal and vertical measurement, locating and setting out, dimensions of circles, dimensional accuracy, numbers and calculations, area, size and mass, measurable parameters, material types, steel, non-ferrous metals, polymers, minerals and ceramics, concrete, wood, and material properties). Not a reproduction of any published textbook.
     </footer>
   </div>
 
@@ -3574,6 +4039,51 @@
         { answers:['concrete'] },
       ]
     },
+    // Unit 17
+    ex55: {
+      qs: [
+        { answers:['planed'] },
+        { answers:['rough-sawn','rough sawn','rough-sawn timber','rough sawn timber','rough-sawn sections','rough sawn sections'] },
+        { answers:['stress grade','stress-grade'] },
+        { answers:['visually stress-graded','visually stress graded','visually stress graded timber'] },
+        { answers:['mechanically stress-graded','mechanically stress graded','mechanically stress graded timber'] },
+      ]
+    },
+    ex56: {
+      qs: [
+        { answers:['softwood','softwoods'] },
+        { answers:['stress-graded','stress graded','rough-sawn','rough sawn','structural','planed'] },
+        { answers:['glulam','glulams','glue-laminated','glue laminated'] },
+        { answers:['plywood'] },
+        { answers:['OSB','orientated strand board','oriented strand board'] },
+        { answers:['particle','chip'] },
+        { answers:['MDF','medium-density fibreboard','medium density fibreboard','chipboard'] },
+      ]
+    },
+    // Unit 18
+    ex57: {
+      qs: [
+        { answers:['tension'] },
+        { answers:['compression'] },
+        { answers:['elongation'] },
+        { answers:['extension','elongation'] },
+        { answers:['elongation','extension'] },
+        { answers:['deformation'] },
+      ]
+    },
+    ex59: {
+      qs: [
+        { answers:['elastic'] },
+        { answers:['ductile'] },
+        { answers:['elastic limit'] },
+        { answers:['yield point'] },
+        { answers:['plastic deformation','deformation'] },
+        { answers:['plastically'] },
+        { answers:['elastically'] },
+      ]
+    },
+
+
 
     ex34: {
       qs: [
@@ -3667,6 +4177,7 @@
   buildBank('ex53');
 
   function checkExercise(exId){
+    if(exId === 'ex44') return checkEx44();
     const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
     let correct = 0;
     inputs.forEach(inp=>{
@@ -3681,6 +4192,7 @@
     scoreEl.classList.toggle('done', correct===inputs.length);
   }
   function revealExercise(exId){
+    if(exId === 'ex44') return revealEx44();
     const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
     inputs.forEach(inp=>{
       const idx = +inp.dataset.idx;
@@ -3691,6 +4203,7 @@
     document.getElementById(exId+'-score').textContent = 'Answers revealed';
   }
   function resetExercise(exId){
+    if(exId === 'ex44') return resetEx44();
     const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
     inputs.forEach(inp=>{ inp.value=''; inp.classList.remove('correct','incorrect'); });
     document.getElementById(exId+'-score').textContent = '';
@@ -3698,6 +4211,25 @@
 
   // Matching exercise (1.2)
   const MATCH = {
+    ex58: {
+      left: [
+        { id:1, text:'If a material is stiff,', answer:'c' },
+        { id:2, text:'If a material is brittle,', answer:'b' },
+        { id:3, text:'If a material is plastic,', answer:'a' },
+        { id:4, text:'If a material yields,', answer:'f' },
+        { id:5, text:'If a material fractures,', answer:'e' },
+        { id:6, text:'If a material is elastically deformed,', answer:'d' },
+      ],
+      right: [
+        { key:'a', label:'it is malleable and/or ductile.', tag:'a' },
+        { key:'b', label:'it has low elasticity and low tensile strength.', tag:'b' },
+        { key:'c', label:'it has low elasticity and high tensile strength.', tag:'c' },
+        { key:'d', label:'it has been extended to a point before its elastic limit.', tag:'d' },
+        { key:'e', label:'it has been loaded beyond its ultimate tensile strength.', tag:'e' },
+        { key:'f', label:'it has been significantly plastically deformed, but not broken.', tag:'f' },
+      ]
+    },
+
     ex2: {
       left: [
         { id:1, text:'A 2D view of one side, or face, of an object', answer:'elevation' },
@@ -3822,6 +4354,7 @@
   renderMatch('ex18');
   renderMatch('ex21');
   renderMatch('ex24');
+  renderMatch('ex58');
 
   // Sort exercise (2.2)
   const SORT = {
@@ -4429,6 +4962,129 @@
 
   renderPuzzleGrid();
 
+  // Exercise 13.2 checker (order-independent within each category)
+  function checkEx44(){
+    let correctCount = 0;
+
+    function checkGroup(inputs, validOptions){
+      const entered = inputs.map(inp => normalize(inp.value));
+      const used = [];
+      inputs.forEach((inp, idx) => {
+        inp.classList.remove('correct', 'incorrect');
+        const val = entered[idx];
+        if(!val) return;
+
+        const matchedOpt = validOptions.find(optList =>
+          optList.some(ans => normalize(ans) === val)
+        );
+
+        if(matchedOpt && !used.includes(matchedOpt[0])){
+          inp.classList.add('correct');
+          used.push(matchedOpt[0]);
+          correctCount++;
+        } else {
+          inp.classList.add('incorrect');
+        }
+      });
+    }
+
+    // Category 1: Metal elements (5 inputs)
+    const g1Inputs = [
+      document.querySelector('#ex44 .blank[data-idx="0"]'),
+      document.querySelector('#ex44 .blank[data-idx="1"]'),
+      document.querySelector('#ex44 .blank[data-idx="2"]'),
+      document.querySelector('#ex44 .blank[data-idx="3"]'),
+      document.querySelector('#ex44 .blank[data-idx="4"]')
+    ].filter(Boolean);
+
+    const metalElements = [
+      ['aluminium', 'aluminum', 'al'],
+      ['copper', 'cu'],
+      ['zinc', 'zn'],
+      ['titanium', 'ti'],
+      ['gold', 'au'],
+      ['silver', 'ag'],
+      ['tin', 'sn'],
+      ['lead', 'pb'],
+      ['magnesium', 'mg']
+    ];
+    checkGroup(g1Inputs, metalElements);
+
+    // Category 2: Alloys (3 inputs)
+    const g2Inputs = [
+      document.querySelector('#ex44 .blank[data-idx="5"]'),
+      document.querySelector('#ex44 .blank[data-idx="6"]'),
+      document.querySelector('#ex44 .blank[data-idx="7"]')
+    ].filter(Boolean);
+
+    const alloys = [
+      ['brass'],
+      ['bronze'],
+      ['duralumin']
+    ];
+    checkGroup(g2Inputs, alloys);
+
+    // Category 3: Precious metals (2 inputs)
+    const g3Inputs = [
+      document.querySelector('#ex44 .blank[data-idx="8"]'),
+      document.querySelector('#ex44 .blank[data-idx="9"]')
+    ].filter(Boolean);
+
+    const preciousMetals = [
+      ['gold', 'au'],
+      ['silver', 'ag']
+    ];
+    checkGroup(g3Inputs, preciousMetals);
+
+    const total = g1Inputs.length + g2Inputs.length + g3Inputs.length;
+    const scoreEl = document.getElementById('ex44-score');
+    if(scoreEl){
+      scoreEl.textContent = correctCount + ' / ' + total + ' correct';
+      scoreEl.classList.toggle('done', correctCount === total);
+    }
+  }
+
+  function revealEx44(){
+    const answers = {
+      0: 'aluminium',
+      1: 'copper',
+      2: 'zinc',
+      3: 'titanium',
+      4: 'gold',
+      5: 'brass',
+      6: 'bronze',
+      7: 'duralumin',
+      8: 'silver',
+      9: 'gold'
+    };
+    Object.keys(answers).forEach(idx => {
+      const inp = document.querySelector('#ex44 .blank[data-idx="' + idx + '"]');
+      if(inp){
+        inp.value = answers[idx];
+        inp.classList.remove('incorrect');
+        inp.classList.add('correct');
+      }
+    });
+    const scoreEl = document.getElementById('ex44-score');
+    if(scoreEl){
+      scoreEl.textContent = 'Answers revealed';
+      scoreEl.classList.add('done');
+    }
+  }
+
+  function resetEx44(){
+    const inputs = document.querySelectorAll('#ex44 .blank');
+    inputs.forEach(inp => {
+      inp.value = '';
+      inp.classList.remove('correct', 'incorrect');
+    });
+    const scoreEl = document.getElementById('ex44-score');
+    if(scoreEl){
+      scoreEl.textContent = '';
+      scoreEl.classList.remove('done');
+    }
+  }
+
   // Exercise 15.2 checker
   function checkEx50(){
     let correctCount = 0;
@@ -4540,8 +5196,108 @@
     '<ul class="cloze-list" id="ex8-list"></ul>';
   buildCloze('ex8');
 
+  // Exercise 17.1 (Unit 17) interactive logic
+  function syncChipsFromInput(inpId){
+    const inp = document.getElementById(inpId);
+    if(!inp) return;
+    const letters = (inp.value || '').toLowerCase().match(/[a-f]/g) || [];
+    const set = new Set(letters);
+    const container = document.querySelector('.letter-chips[data-target="' + inpId + '"]');
+    if(container){
+      container.querySelectorAll('.chip-btn').forEach(btn => {
+        const char = btn.getAttribute('data-char');
+        btn.classList.toggle('active', set.has(char));
+      });
+    }
+  }
+
+  function toggleLetter(inpId, char){
+    const inp = document.getElementById(inpId);
+    if(!inp) return;
+    let letters = (inp.value || '').toLowerCase().match(/[a-f]/g) || [];
+    let set = new Set(letters);
+    if(set.has(char)){
+      set.delete(char);
+    } else {
+      set.add(char);
+    }
+    const sorted = Array.from(set).sort();
+    inp.value = sorted.join(', ');
+    syncChipsFromInput(inpId);
+  }
+
+  ['ex54-0', 'ex54-1', 'ex54-2'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('input', () => syncChipsFromInput(id));
+  });
+
+  function checkEx54(){
+    const targets = [
+      { id: 'ex54-0', ans: 'ce' },
+      { id: 'ex54-1', ans: 'af' },
+      { id: 'ex54-2', ans: 'cdf' }
+    ];
+    let correct = 0;
+    targets.forEach(t => {
+      const inp = document.getElementById(t.id);
+      if(!inp) return;
+      const letters = ((inp.value || '').toLowerCase().match(/[a-f]/g) || []).sort().join('');
+      inp.classList.remove('correct', 'incorrect');
+      if(letters === t.ans){
+        inp.classList.add('correct');
+        correct++;
+      } else {
+        inp.classList.add('incorrect');
+      }
+    });
+    const scoreEl = document.getElementById('ex54-score');
+    if(scoreEl){
+      scoreEl.textContent = correct + ' / 3 correct';
+      scoreEl.classList.toggle('done', correct === 3);
+    }
+  }
+
+  function revealEx54(){
+    const map = {
+      'ex54-0': 'c, e',
+      'ex54-1': 'a, f',
+      'ex54-2': 'c, d, f'
+    };
+    Object.keys(map).forEach(id => {
+      const inp = document.getElementById(id);
+      if(inp){
+        inp.value = map[id];
+        inp.classList.remove('incorrect');
+        inp.classList.add('correct');
+        syncChipsFromInput(id);
+      }
+    });
+    const scoreEl = document.getElementById('ex54-score');
+    if(scoreEl){
+      scoreEl.textContent = 'Answers revealed';
+      scoreEl.classList.add('done');
+    }
+  }
+
+  function resetEx54(){
+    ['ex54-0', 'ex54-1', 'ex54-2'].forEach(id => {
+      const inp = document.getElementById(id);
+      if(inp){
+        inp.value = '';
+        inp.classList.remove('correct', 'incorrect');
+        syncChipsFromInput(id);
+      }
+    });
+    const scoreEl = document.getElementById('ex54-score');
+    if(scoreEl){
+      scoreEl.textContent = '';
+      scoreEl.classList.remove('done');
+    }
+  }
+
+
   // Notes autosave (per unit)
-  [['notes1','drawings-unit1-notes'], ['notes2','drawings-unit2-notes'], ['notes3','drawings-unit3-notes'], ['notes4','drawings-unit4-notes'], ['notes5','drawings-unit5-notes'], ['notes6','drawings-unit6-notes'], ['notes7','drawings-unit7-notes'], ['notes8','drawings-unit8-notes'], ['notes9','drawings-unit9-notes'], ['notes10','drawings-unit10-notes'], ['notes11','drawings-unit11-notes'], ['notes12','drawings-unit12-notes'], ['notes13','drawings-unit13-notes'], ['notes14','drawings-unit14-notes'], ['notes15','drawings-unit15-notes'], ['notes16','drawings-unit16-notes']].forEach(([id,key])=>{
+  [['notes1','drawings-unit1-notes'], ['notes2','drawings-unit2-notes'], ['notes3','drawings-unit3-notes'], ['notes4','drawings-unit4-notes'], ['notes5','drawings-unit5-notes'], ['notes6','drawings-unit6-notes'], ['notes7','drawings-unit7-notes'], ['notes8','drawings-unit8-notes'], ['notes9','drawings-unit9-notes'], ['notes10','drawings-unit10-notes'], ['notes11','drawings-unit11-notes'], ['notes12','drawings-unit12-notes'], ['notes13','drawings-unit13-notes'], ['notes14','drawings-unit14-notes'], ['notes15','drawings-unit15-notes'], ['notes16','drawings-unit16-notes'], ['notes17','drawings-unit17-notes'], ['notes18','drawings-unit18-notes']].forEach(([id,key])=>{
     try{
       const el = document.getElementById(id);
       const saved = localStorage.getItem(key);
